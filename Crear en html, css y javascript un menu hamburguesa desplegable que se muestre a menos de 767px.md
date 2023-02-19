@@ -1,22 +1,9 @@
 
-```
-Exported with AIPRM https://www.aiprm.com by Eugenio de Frutos on 10/2/2023, 12:49:51
-```
-
----
-
-
-**User:**
 Crear en html, css y javascript un menu hamburguesa desplegable que se muestre a menos de 767px
 
----
-
-**ChatGPT:**
 Aquí está un ejemplo de código HTML, CSS y JavaScript para crear un menú hamburguesa desplegable que se muestre a menos de 767 píxeles:
 HTML:
-```php
-php
-Copy code
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -38,7 +25,7 @@ Copy code
 
 </body>
 </html>
-```
+
 CSS:
 ```css
 css
@@ -85,11 +72,9 @@ Copy code
 .topnav .icon {
   display: none;
 }
-```
+
 JavaScript:
-```javascript
-javascript
-Copy code
+
 function myFunction() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
@@ -98,5 +83,5 @@ function myFunction() {
     x.className = "topnav";
   }
 }
-```
+
 Este código crea un menú con diferentes enlaces de navegación que se despliegan al hacer clic en el icono hamburguesa (representado por una "i" en un círculo) cuando el tamaño de la pantalla es menor a 767 píxeles.

@@ -72,13 +72,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 Esta es una estructura básica y puede variar dependiendo de las necesidades específicas de cada página.
 
-
-
 Estructura básica de una página web que trate sobre cursos, manuales, tutoriales y aprendizaje de HTML, CSS y JavaScript:
 HTML:
 
-php
-Copy code
 <!DOCTYPE html>
 <html>
   <head>
@@ -121,7 +117,7 @@ Copy code
     <script src="script.js"></script>
   </body>
 </html>
-```
+
 CSS:
 
 body {
@@ -292,10 +288,6 @@ botonFiltro.addEventListener("click", filtrarContenido);
 
 En este ejemplo se ha agrupado todo el contenido de cursos, manuales y tutoriales en una sola sección y se ha añadido una clase para identificar
 
-
-**User:**
-con la funcionalidad anteriorior, quiero una sección por cada lenguaje 
-
 Para tener una sección por cada lenguaje, se puede crear una sección para cada uno de ellos y ocultarlas o mostrarlas en base a la selección del usuario.
 HTML:
 
@@ -442,7 +434,6 @@ event.preventDefault();
 buscarTerminos();
 });
 
-
 CSS:
 
 .contenido-seccion {
@@ -563,7 +554,6 @@ HTML:
 </script>
 
 Con esto, ya tendrías un encabezado con un icono SVG, el texto "Copiar código" y un botón para copiar el fragmento de código, todo fuera de la ventana de fragmento de código.
-
 
 Para hacer que la página sea responsiva, puedes utilizar media queries en CSS. Estas media queries te permiten definir diferentes estilos para diferentes tamaños de pantalla. Aquí te muestro un ejemplo:
 CSS:
@@ -745,7 +735,6 @@ css:
 Estas son solo algunas de las muchas maneras de mejorar la experiencia de usuario en pantallas más pequeñas con CSS. La clave es experimentar y encontrar lo que funciona mejor para su contenido y su público objetivo.
 
 Puedes utilizar media queries en CSS para limitar el tamaño de la ventana de fragmento y ajustar el encabezado al mismo tamaño en pantallas más pequeñas. Sería algo así:
-```css:
 
 @media screen and (max-width: 600px) {
   .code-window {
@@ -760,7 +749,6 @@ Puedes utilizar media queries en CSS para limitar el tamaño de la ventana de fr
 Esto asegurará que la ventana de fragmento y el encabezado se adapten a la cantidad de texto sin formato y al tamaño de la pantalla, mejorando la experiencia de usuario en dispositivos más pequeños.
 
 Puedes utilizar CSS para ajustar el tamaño de la ventana de fragmento de código al contenido de texto sin formato. Una forma de hacerlo es establecer un ancho máximo en porcentaje y una altura máxima en pixels para la ventana, y hacer que se ajuste automáticamente a la cantidad de contenido:
-```css
 
 .code-window {
   max-width: 80%;
@@ -771,7 +759,6 @@ Puedes utilizar CSS para ajustar el tamaño de la ventana de fragmento de códig
 El código anterior establece un ancho máximo del 80% y una altura máxima de 500 píxeles para la ventana de fragmento de código. La propiedad <code>overflow</code> con el valor <code>auto</code> permite que la ventana se ajuste automáticamente a la cantidad de contenido y muestre barras de desplazamiento cuando sea necesario.
 
 Puedes centrar la ventana con respecto al ancho de la sección utilizando el valor <code>margin: 0 auto</code> en CSS:
-```css
 
 .code-window {
   max-width: 80%;
@@ -781,14 +768,12 @@ Puedes centrar la ventana con respecto al ancho de la sección utilizando el val
 }
 
 El código anterior centrará la ventana en la sección y además agrega un margen de 50 píxeles en la parte superior e inferior. También puedes utilizar el valor <code>text-align: center</code> en el contenedor que contiene la ventana para centrarla horizontalmente:
-```css
 
 .container {
   text-align: center;
 }
 
 Puedes colocar estas clases en los elementos HTML correspondientes mediante la adición de la propiedad <code>class</code>:
-```php
 
 <div class="container">
   <div class="code-window">
@@ -799,7 +784,6 @@ Puedes colocar estas clases en los elementos HTML correspondientes mediante la a
 El código anterior agrega las clases <code>container</code> y <code>code-window</code> a los elementos <code>div</code> correspondientes en HTML.
 
 Puedes ajustar el encabezado en la parte superior derecha de la ventana de fragmento de código usando la propiedad <code>position</code> en CSS:
-```css
 
 .code-window {
   position: relative;
@@ -826,7 +810,6 @@ Puedes ajustar el encabezado en la parte superior derecha de la ventana de fragm
 
 El código anterior coloca la clase <code>header</code> en una posición absoluta en la parte superior derecha de la ventana de fragmento de código mediante la propiedad <code>top</code> y <code>right</code>. Además, usa la propiedad <code>display: flex</code> y <code>align-items: center</code> para alinear el icono y el texto en el centro del encabezado. Puedes ajustar el tamaño y la posición de la imagen SVG mediante las propiedades <code>height</code> y <code>width</code>.
 En HTML, puedes agregar el encabezado de la siguiente manera:
-```php
 
 <div class="code-window">
   <div class="header">
@@ -839,7 +822,6 @@ En HTML, puedes agregar el encabezado de la siguiente manera:
 </div>
 
 Puedes dar estilos al body en el archivo CSS usando la siguiente sintaxis:
-```css
 
 body {
   width: 100%;
@@ -859,12 +841,10 @@ En este ejemplo, el body tendrá un ancho y un alto del 100% de la pantalla de e
 
 El tipo de botón que debes utilizar para filtrar depende de cómo desees implementar la funcionalidad.
 Si quieres que sea un botón que envié información a un servidor para realizar el filtrado, debes utilizar el tipo "submit":
-```html
 
 <button type="submit">Filtrar</button>
 
 Si quieres que sea un botón que realice una acción en JavaScript sin enviar información a un servidor, debes utilizar el tipo "button":
-```html
 
 <button type="button">Filtrar</button>
 
