@@ -1,16 +1,4 @@
-Introducción a HTML
+ 
 
-HTML (HyperText Markup Language) es un lenguaje de marcado utilizado para crear páginas web. 
-HTML define la estructura y contenido de una página web mediante etiquetas, que indican cómo 
-se debe mostrar el contenido en un navegador web. 
-Algunas de las etiquetas más comunes en HTML son:
-<html>, <head>, <title>, <body>, <header>, <nav>, <main>, <section>, <article>, <aside>, <footer>, <p>,
-                                <h1>, <a>, <img>, <ul>, <ol>, <li>, <table>, <form>, etc.
 
-HTML se utiliza conjuntamente con otros lenguajes web como CSS (Cascading Style Sheets) 
-para estilizar la apariencia de una página web y JavaScript para añadir interactividad 
-y dinamismo a las páginas.
 
-Además, HTML5 es la última versión estable de HTML y es ampliamente utilizada en la actualidad. 
-Ofrece nuevas etiquetas y características que mejoran la estructura y accesibilidad de las 
-páginas web.
