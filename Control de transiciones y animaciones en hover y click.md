@@ -1,6 +1,4 @@
-
-con html, css y javascript Control de transiciones y animaciones en hover y click
-
+<h1>con html, css y javascript Control de transiciones y animaciones en hover y click</h1>
 
 Puedes controlar transiciones y animaciones en HTML, CSS y JavaScript usando selectores CSS y eventos JavaScript como hover y click. Aquí hay un ejemplo básico:
 HTML:
