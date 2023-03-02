@@ -2,7 +2,7 @@
 PENDIENTE DE INCORPORAR A TemasAvanzadosCSS.html
 
 **Animaciones**
-Para dar algunas animaciones a tu código CSS, necesitas definir una transición primero.
+
 
 Una transición le dice al navegador que propiedades cambiar gradualmente al poner un elemento sobre `hover` o cuando se activa cualquier otra acción. Esto se puede lograr agregando la propiedad `transition`. Aquí hay un ejemplo:
 
