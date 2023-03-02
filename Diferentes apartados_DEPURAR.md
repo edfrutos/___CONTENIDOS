@@ -1,76 +1,7 @@
-Temas más avanzados de programación CSS, como animaciones, transiciones y transformaciones.
 
-ChatGPT
--------
-
-Animaciones CSS
----------------
-
-Las animaciones CSS le permiten añadir detalles visuales interesantes y creativos a sus aplicaciones web y sitios web. Estas animaciones se pueden lograr definiendo propiedades CSS en varias partes de la aplicación. Por ejemplo, puede definir que una imagen cambie de tamaño cuando el usuario sobrepase un punto dado usando la propiedad CSS `transition`.
-
-Transiciones CSS
-----------------
-
-La propiedad CSS `transition` indica una ruta entre los cambios en la interfaz de usuario, lo que significa que mantiene un aspecto organizado durante los cambios en la IU. Se pueden definir transiciones entre los cambios de estilo para las distintas casillas de entrada, botones y otras partes de la aplicación.
-
-Transformaciones CSS
---------------------
-
-Usando la propiedad CSS `transform`, puede transformar elementos del interface de usuario para escalarlos, rotarlos, desplazarlos y más. Esto se puede usar para crear efectos interesantes, tales como hacer que un elemento se muestre en forma de onda cuando se desplaza por un sitio web. Al igual que las transiciones, la propiedad `transform` siempre se puede usar para mantener una IU organizada sin perder la funcionalidad de la misma.
-
-#### Animaciones CSS
-
-Las animaciones CSS son un mecanismo para cambiar los estilos de CSS en un intervalo de tiempo y para hacer transiciones entre varios estados. Consisten en dos partes: una definición de la animación y un conjunto de reglas que se aplican cuando se activa la animación.
-
-Ejemplo de animación CSS básica:
-
-```css
-.example { 
-    animation: example 5s ease-in-out; 
-}
-    
-@keyframes example { 
-    0% { 
-        transform: translateX(0); 
-    } 
-    100% { 
-        transform: translateX(100px); 
-    } 
-}
-
-Esta animación moverá un elemento a lo largo de la horizontal 100px en un total de 5 segundos, con una `ease-in-out` lenta al principio y al final.
-
-#### Transiciones CSS
-
-Las transiciones CSS permiten cambiar un estilo de CSS de manera suave, gradual y sin interrumpir otros estilos del elemento. Estas transiciones se activan automáticamente cuando un usuario interactúa con el elemento o cuando se cambia el valor de una propiedad de CSS.
-
-Aquí hay un ejemplo de una transición CSS básica:
-
-```css
-.example {
-    transition: all .5s;
-}
-```
-
-Con esta definición, todos los cambios estilos relacionados con `.example` tendrán una transición suave de duración total de 0,5 segundos.
-
-#### Transformaciones CSS
-
-Las transformaciones CSS sirven para modificar la apariencia de un elemento mediante la rotación, escalado, desplazamiento y otros. Estas transformaciones pueden ser útiles para crear interacciones interesantes y fluidas para los usuarios.
-
-Aquí hay un ejemplo de una transformación CSS básica:
-
-```css
-.example {
-    transform: translateX(100px);
-}
-```
-
-Este ejemplo moverá el elemento con la clase `.example` 100px hacia la derecha.
-
+PENDIENTE DE INCORPORAR A TemasAvanzadosCSS.html
 
 **Animaciones**
-
 Para dar algunas animaciones a tu código CSS, necesitas definir una transición primero.
 
 Una transición le dice al navegador que propiedades cambiar gradualmente al poner un elemento sobre `hover` o cuando se activa cualquier otra acción. Esto se puede lograr agregando la propiedad `transition`. Aquí hay un ejemplo:

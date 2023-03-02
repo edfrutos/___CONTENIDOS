@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS, animaciones, transiciones y transformaciones.</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism.min.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <h1 style="text-align: center; background-color: aqua; padding: 10px">
+            Programación CSS - Animaciones, transiciones y transformaciones.
+        </h1>
+    </header>
+    <ul>
+       <li>
+            <h3><u>Animaciones CSS</u></h3>
+                     <p style="margin-top: 0; text-align: justify; width: 80%;">Las animaciones CSS le permiten añadir detalles visuales interesantes y creativos a sus aplicaciones web y sitios web. Estas animaciones se pueden lograr definiendo propiedades CSS en varias partes de la aplicación. Por ejemplo, puede definir que una imagen cambie de tamaño cuando el usuario sobrepase un punto dado usando la propiedad CSS <code style="font-size: 16px; font-weight: 700;">transition</code>.</p>
+        </li>
+<p>Ejemplo de animación CSS básica:</p>
+        
+        <!--INICIO Código para ventana fragmento con copy-->
+  <div id="code-window">
+    <div id="code-header">
+      <span>Code CSS</span>
+      <button id="copy-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path fill="none" d="M0 0h24v24H0z" />
+          <path
+            d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+        </svg>
+        <span>Copy Code</span>
+      </button>
+    </div>
+    <pre><code id="code-input" class="language-css">
+          <textarea>
+            
+            .example { 
+                animation: example 5s ease-in-out; 
+            }
+                
+            @keyframes example { 
+                0% { 
+                    transform: translateX(0); 
+                } 
+                100% { 
+                    transform: translateX(100px); 
+                } 
+            }
+           
+          </textarea>
+        </code></pre>
+  </div>
+  <!--FIN Código para ventana fragmento con copy-->
+<p>
+    Esta animación moverá un elemento a lo largo de la horizontal 100px en un total de 5 segundos, con una `ease-in-out` lenta al principio y al final.
+
+</p>
+        <li>
+            <h3><u>Transiciones CSS</u></h3>
+            <p style="text-align: justify; width: 80%;">La propiedad CSS <code style="font-size: 16px; font-weight: 700;">transition</code> indica una ruta entre los cambios en la interfaz de usuario, lo que significa que mantiene un aspecto organizado durante los cambios en la IU. Se pueden definir transiciones entre los cambios de estilo para las distintas casillas de entrada, botones y otras partes de la aplicación.</p>
+        </li>
+        <p style="text-align: justify; width: 80%;">
+            Las transiciones CSS permiten cambiar un estilo de CSS de manera suave, gradual y sin interrumpir otros estilos del elemento. Estas transiciones se activan automáticamente cuando un usuario interactúa con el elemento o cuando se cambia el valor de una propiedad de CSS.
+        <br><br> Aquí hay un ejemplo de una transición CSS básica:</p>
+        <!--INICIO Código para ventana fragmento con copy-->
+  <div id="code-window">
+    <div id="code-header">
+      <span>Code CSS</span>
+      <button id="copy-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path fill="none" d="M0 0h24v24H0z" />
+          <path
+            d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+        </svg>
+        <span>Copy Code</span>
+      </button>
+    </div>
+    <pre><code id="code-input" class="language-css">
+          <textarea>
+    .example {
+                transition: all .5s;
+              }
+          </textarea>
+        </code></pre>
+  </div>
+  <!--FIN Código para ventana fragmento con copy-->
+  <p style="text-align: justify; width: 80%;">Con esta definición, todos los cambios estilos relacionados con `.example` tendrán una transición suave de duración total de 0,5 segundos.</p>
+        <li>
+            <h3><u>Transformaciones CSS</u></h3>
+                     <p style="text-align: justify; width: 80%;">Usando la propiedad CSS `transform`, puede transformar elementos del interface de usuario para escalarlos, rotarlos, desplazarlos y más. Esto se puede usar para crear efectos interesantes, tales como hacer que un elemento se muestre en forma de onda cuando se desplaza por un sitio web. Al igual que las transiciones, la propiedad<code style="font-size: 16px; font-weight: 700;"> transform</code> siempre se puede usar para mantener una IU organizada sin perder la funcionalidad de la misma.</p>      
+      </li>
+      <p style="text-align: justify; width: 80%;">Las transformaciones CSS sirven para modificar la apariencia de un elemento mediante la rotación, escalado, desplazamiento y otros. Estas transformaciones pueden ser útiles para crear interacciones interesantes y fluidas para los usuarios.</p>
+    <p>Aquí hay un ejemplo de una transformación CSS básica:</p>
+     <!--INICIO Código para ventana fragmento con copy-->
+  <div id="code-window">
+    <div id="code-header">
+      <span>Code CSS</span>
+      <button id="copy-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path fill="none" d="M0 0h24v24H0z" />
+          <path
+            d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+        </svg>
+        <span>Copy Code</span>
+      </button>
+    </div>
+    <pre><code id="code-input" class="language-css">
+          <textarea>
+            .example {
+                transform: translateX(100px);
+            }
+          </textarea>
+        </code></pre>
+  </div>
+  <!--FIN Código para ventana fragmento con copy-->
+  <p style="text-align: justify; width: 80%;">Este ejemplo moverá el elemento con la clase <code style="font-size: 16px; font-weight: 700;">.example</code> 100px hacia la derecha.</p>
+  
+    </ul>
+
+
+    <footer style="text-align: center; background-color: aqua; padding: 10px">EDF Programación</footer>
+</body>
+</html>
