@@ -1,11 +1,40 @@
-
-MANUAL DE PROGRAMACIÓN EN HTML
-
-
-HTML (Hypertext Markup Language) es el lenguaje utilizado para crear páginas web. A continuación se presenta una breve guía de programación en HTML:
-<li>Empiece con la estructura básica de un documento HTML:</li>
-
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MANUAL DE PROGRAMACIÓN EN HTML</title>
+    <!--Librerías Prism:-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism.min.css" rel="stylesheet" />
+
+</head>
+<body>
+    <header><h1 style="text-align: center;">MANUAL DE PROGRAMACIÓN EN HTML</h1>
+        <h3 style="text-align:center">HTML (Hypertext Markup Language) es el lenguaje utilizado para crear páginas web. A continuación se presenta una breve guía de programación en HTML:</>
+              </header>
+    <ul>
+        <li>Empiece con la estructura básica de un documento HTML:</li>
+        <li>La primera línea especifica el tipo de documento, en este caso es HTML5.</li><li>La etiqueta <code>&lt;html&gt;</code> indica el inicio y el final del documento HTML.</li><li>La etiqueta <code>&lt;head&gt;</code> contiene información sobre la página, como el título (que se muestra en la pestaña del navegador) y los metadatos.</li><li>La etiqueta <code>&lt;body&gt;</code> contiene el contenido visible de la página, como texto, imágenes, enlaces, etc.</li>
+        <p style="width: 80%; text-align: justify;">Cada etiqueta HTML tiene una función específica, y se utilizan para dar estructura y formato al contenido de la página. La estructura básica proporciona una buena base para comenzar a crear una página web.</p>
+        <!--INICIO Código para ventana fragmento con copy-->
+  <div id="code-window">
+    <div id="code-header">
+      <span>Code CSS</span>
+      <button id="copy-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path fill="none" d="M0 0h24v24H0z" />
+          <path
+            d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+        </svg>
+        <span>Copy Code</span>
+      </button>
+    </div>
+    <pre><code id="code-input" class="language-html">
+
+          <textarea>
+            <!DOCTYPE html>
 <html>
 <head>
   <title>Título de la página</title>
@@ -14,46 +43,14 @@ HTML (Hypertext Markup Language) es el lenguaje utilizado para crear páginas we
   Contenido de la página
 </body>
 </html>
-
-<li>Utilice etiquetas para dar formato al contenido de la página, como encabezados, párrafos, listas, enlaces, imágenes, etc. Algunas etiquetas comunes incluyen:</li>
-
-<h1>Encabezado de nivel 1</h1>
-<p>Un párrafo de texto</p>
-<a href="http://www.ejemplo.com">Un enlace</a>
-<img src="imagen.jpg" alt="Descripción de la imagen">
-
-<li>Utilice atributos para proporcionar información adicional sobre las etiquetas, como el enlace de una imagen o el destino de un enlace.</li>
-
-<a href="http://www.ejemplo.com" target="_blank">Abrir enlace en una nueva ventana</a>
-<img src="imagen.jpg" alt="Descripción de la imagen" width="300" height="200">
-```
-<li>Utilice etiquetas de división y clases para organizar y dar estilo a su contenido con CSS.</li>
-
-<div id="contenedor">
-  <p class="texto-destacado">Este es un párrafo destacado</p>
-</div>
-
-<li>Valide su código HTML utilizando herramientas en línea como el validador de W3C para asegurarse de que está escribiendo código válido y estándar.</li>
-Nota: Esta es una breve introducción a la programación en HTML, existen muchos recursos en línea para aprender más sobre esta tecnología.
-
-
-La estructura básica de un documento HTML es la siguiente:
-
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Título de la página</title>
-</head>
-<body>
-  Contenido de la página
-</body>
-</html>
-
-<li>La primera línea especifica el tipo de documento, en este caso es HTML5.</li><li>La etiqueta <code>&lt;html&gt;</code> indica el inicio y el final del documento HTML.</li><li>La etiqueta <code>&lt;head&gt;</code> contiene información sobre la página, como el título (que se muestra en la pestaña del navegador) y los metadatos.</li><li>La etiqueta <code>&lt;body&gt;</code> contiene el contenido visible de la página, como texto, imágenes, enlaces, etc.</li>
-Cada etiqueta HTML tiene una función específica, y se utilizan para dar estructura y formato al contenido de la página. La estructura básica proporciona una buena base para comenzar a crear una página web.
-
-Existen varias etiquetas en HTML que se utilizan para dar formato al contenido de una página web. A continuación se presentan algunas de las etiquetas más comunes:
-<li><p><code>&lt;h1&gt;</code> a <code>&lt;h6&gt;</code>: Etiquetas de encabezado para dar formato a los títulos y subtítulos de la página. <code>&lt;h1&gt;</code> es el encabezado de nivel superior y <code>&lt;h6&gt;</code> es el encabezado de nivel inferior.</p></li>
+          </textarea>
+        </code></pre>
+  </div>
+  <!--FIN Código para ventana fragmento con copy-->
+        <li>Existen varias etiquetas en HTML que se utilizan para dar formato al contenido de una página web.</li>
+           <p style="width: 80%; text-align: justify;">Utilice etiquetas para dar formato al contenido de la página, como encabezados, párrafos, listas, enlaces, imágenes, etc. Algunas etiquetas comunes incluyen:<p>
+<ul>
+    <li><p><code>&lt;h1&gt;</code> a <code>&lt;h6&gt;</code>: Etiquetas de encabezado para dar formato a los títulos y subtítulos de la página. <code>&lt;h1&gt;</code> es el encabezado de nivel superior y <code>&lt;h6&gt;</code> es el encabezado de nivel inferior.</p></li>
 <li><p><code>&lt;p&gt;</code>: Etiqueta de párrafo para dar formato al texto del cuerpo de la página.</p></li>
 <li><p><code>&lt;a&gt;</code>: Etiqueta de enlace para crear enlaces a otras páginas o recursos en la misma página.</p></li>
 <li><p><code>&lt;img&gt;</code>: Etiqueta de imagen para insertar imágenes en la página.</p></li>
@@ -64,10 +61,6 @@ Existen varias etiquetas en HTML que se utilizan para dar formato al contenido d
 <li><p><code>&lt;span&gt;</code>: Etiqueta de sección en línea para dar estilo a una parte específica de un párrafo o división.</p></li>
 <li><p><code>&lt;br&gt;</code> : Etiqueta de salto de línea para insertar un salto de línea en el contenido.</p></li>
 <li><p><code>&lt;hr&gt;</code> : Etiqueta de regla horizontal para insertar una regla horizontal en el contenido.</p></li>
-Estas son solo algunas de las etiquetas más comunes en HTML, existen muchas otras etiquetas y atributos que se pueden utilizar para dar formato y estructura al contenido de una página web. Es recomendable estudiar más sobre HTML y sus diferentes etiquetas para poder utilizarlas de manera efectiva.
-
-
-Además de las etiquetas mencionadas anteriormente, existen varias otras etiquetas y atributos en HTML que se pueden utilizar para dar formato y estructura al contenido de una página web. Algunos ejemplos incluyen:
 <li><p><code>&lt;header&gt;</code>: Etiqueta para crear un encabezado de sección.</p></li>
 <li><p><code>&lt;nav&gt;</code>: Etiqueta para crear una sección de navegación.</p></li>
 <li><p><code>&lt;main&gt;</code>: Etiqueta para especificar el contenido principal de una página.</p></li>
@@ -83,9 +76,7 @@ Además de las etiquetas mencionadas anteriormente, existen varias otras etiquet
 <li><p><code>&lt;style&gt;</code>: Etiqueta para incluir hojas de estilo CSS dentro del documento HTML.</p></li>
 <li><p><code>&lt;meta&gt;</code>: Etiqueta para proporcionar información adicional sobre la página, como la descripción y las palabras clave.</p></li>
 <li><p><code>class</code> y <code>id</code>: Atributos para dar estilo a las etiquetas con CSS y JavaScript.</p></li>
-Estas son solo algunas de las etiquetas y atributos adicionales disponibles en HTML, hay muchas otras que se pueden utilizar para crear páginas web complejas y bien estructuradas. Es recomendable estudiar más sobre HTML y sus diferentes etiquetas y atributos para poder utilizarlos de manera efectiva.
 
-Algunas etiquetas y atributos adicionales en HTML que se pueden utilizar para crear páginas web complejas y bien estructuradas son:
 <li><p><code>&lt;section&gt;</code>: Etiqueta para crear una sección temática de contenido, como un capítulo de un libro o una sección de una página.</p></li>
 <li><p><code>&lt;figure&gt;</code>: Etiqueta para agrupar contenido relacionado, como una imagen y su leyenda.</p></li>
 <li><p><code>&lt;figcaption&gt;</code>: Etiqueta para proporcionar una descripción de una imagen o contenido.</p></li>
@@ -110,10 +101,6 @@ Algunas etiquetas y atributos adicionales en HTML que se pueden utilizar para cr
 <li><p><code>&lt;picture&gt;</code>: Etiqueta para especificar diferentes imágenes en función de las características del dispositivo.</p></li>
 <li><p><code>&lt;figure&gt;</code>: Etiqueta para especificar un contenido auto-contenido como una imagen, audio, video o código.</p></li>
 <li><p><code>&lt;figcaption&gt;</code>: Etiqueta para especificar una descripción de un contenido</p></li>
-
-
-Hay varios atributos en HTML que se pueden utilizar para proporcionar información adicional sobre las etiquetas. Algunos ejemplos incluyen:
-
 <li><p><code>title</code>: Atributo para proporcionar un título o descripción adicional para una etiqueta. Por ejemplo, se puede utilizar en una etiqueta <code>&lt;img&gt;</code> para proporcionar una descripción de la imagen.</p></li>
 <li><p><code>alt</code>: Atributo para proporcionar un texto alternativo para una etiqueta, como una imagen. Este texto se mostrará en caso de que la imagen no se pueda cargar.</p></li>
 <li><p><code>href</code>: Atributo para proporcionar un enlace hipertexto para una etiqueta, como una etiqueta <code>&lt;a&gt;</code>.</p></li>
@@ -121,3 +108,80 @@ Hay varios atributos en HTML que se pueden utilizar para proporcionar informaci�
 <li><p><code>width</code> y <code>height</code>: Atributos para especificar el tamaño de una etiqueta, como una imagen o un video.</p></li>
 <li><p><code>class</code> y <code>id</code>: Atributos para proporcionar información sobre una etiqueta que puede ser utilizada para dar estilo a la misma con CSS y JavaScript.</p></li>
 <li><p><code>name</code>: Atributo para especificar un nombre para una etiqueta, como un campo de formulario.</p></li>
+</ul>
+            <!--INICIO Código para ventana fragmento con copy-->
+<div id="code-window">
+    <div id="code-header">
+      <span>Code CSS</span>
+      <button id="copy-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path fill="none" d="M0 0h24v24H0z" />
+          <path
+            d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+        </svg>
+        <span>Copy Code</span>
+      </button>
+    </div>
+    <pre><code id="code-input" class="language-html">
+
+          <textarea>
+            <h1>Encabezado de nivel 1</h1>
+            <p>Un párrafo de texto</p>
+            <a href="http://www.ejemplo.com">Un enlace</a>
+            <img src="imagen.jpg" alt="Descripción de la imagen">
+          </textarea>
+        </code></pre>
+  </div>
+  <!--FIN Código para ventana fragmento con copy-->
+  <li>Utilice atributos para proporcionar información adicional sobre las etiquetas, como el enlace de una imagen o el destino de un enlace.</li>
+<!--INICIO Código para ventana fragmento con copy-->
+<div id="code-window">
+    <div id="code-header">
+      <span>Code CSS</span>
+      <button id="copy-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path fill="none" d="M0 0h24v24H0z" />
+          <path
+            d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+        </svg>
+        <span>Copy Code</span>
+      </button>
+    </div>
+    <pre><code id="code-input" class="language-html">
+
+          <textarea>
+            <a href="http://www.ejemplo.com" target="_blank">Abrir enlace en una nueva ventana</a>
+<img src="imagen.jpg" alt="Descripción de la imagen" width="300" height="200">
+          </textarea>
+        </code></pre>
+  </div>
+  <!--FIN Código para ventana fragmento con copy-->
+  <li>Utilice etiquetas de división y clases para organizar y dar estilo a su contenido con CSS.</li>
+  <!--INICIO Código para ventana fragmento con copy-->
+<div id="code-window">
+    <div id="code-header">
+      <span>Code CSS</span>
+      <button id="copy-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path fill="none" d="M0 0h24v24H0z" />
+          <path
+            d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+        </svg>
+        <span>Copy Code</span>
+      </button>
+    </div>
+    <pre><code id="code-input" class="language-html">
+          <textarea>
+            <a href="http://www.ejemplo.com" target="_blank">Abrir enlace en una nueva ventana</a>
+            <img src="imagen.jpg" alt="Descripción de la imagen" width="300" height="200">
+            <div id="contenedor">
+                <p class="texto-destacado">Este es un párrafo destacado</p>
+              </div>
+          </textarea>
+        </code></pre>
+  </div>
+  <!--FIN Código para ventana fragmento con copy-->
+  <li>Valide su código HTML utilizando herramientas en línea como el validador de W3C para asegurarse de que está escribiendo código válido y estándar.</li>
+</ul>
+</body>
+</html>
