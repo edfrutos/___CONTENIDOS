@@ -1,79 +1,9 @@
 
 PENDIENTE DE INCORPORAR A TemasAvanzadosCSS.html
 
-**Animaciones**
-
-
-Una transición le dice al navegador que propiedades cambiar gradualmente al poner un elemento sobre `hover` o cuando se activa cualquier otra acción. Esto se puede lograr agregando la propiedad `transition`. Aquí hay un ejemplo:
-
-```css
-.mi-elemento {
-  transition: width 0.2s ease-in-out;
-}
-
-Luego, para crear una animación, agregue las propiedades de inicio y de fin de su animación como se muestra a continuación:
-
-```css
-.mi-elemento {
-  width: 50%;
-
-  /* Animación */
-  transition: width 0.2s ease-in-out;
-
-  &:hover {
-    width: 75%;
-  }
-}
-
-En el anterior ejemplo, el ancho del elemento cambiará gradualmente desde un 50% hasta un 75% cuando el usuario coloque el ratón sobre él.
-
-**Transiciones**
-
-Las transiciones le permiten cambiar gradualmente los estilos de un elemento de un estado a otro, como desde un estado de `hover` a un estado normal.
-
-Se pueden hacer con unas pocas líneas de código CSS ya que lo configurará la propiedad `transition`.
-
-Aquí tienes un ejemplo para cambiar del tamaño del texto del elemento `mi-elemento` cuando se ponga sobre él el ratón:
-
-```css
-.mi-elemento {
-  font-size: 16px;
-
-  /* Configurar la transición */
-  transition: font-size 0.2s linear;
-
-  &:hover {
-    font-size: 24px;
-  }
-}
-
-En el anterior ejemplo, el tamaño del texto del elemento cambiaría gradualmente desde 16px a 24px cuando el usuario coloque el ratón sobre él.
-
-**Transformaciones**
-
-Las transformaciones le permiten cambiar el tamaño, rotación y ubicación de un elemento en la pantalla usando solamente código CSS. Esto se logra usando la propiedad `transform`, como en el siguiente ejemplo:
-
-```css
-.mi-elemento {
-  /* Rotación */
-  transform: rotate(45deg);
-
-  /* Escalar */
-  transform: scale(0.5);
-
-  /* Mover */
-  transform: translateX(20px);
-}
-
-En el anterior ejemplo, el elemento .mi-elemento se rotaría 45 grados, se reduciría a la mitad de su tamaño original y se movería 20px hacia la derecha.
-
-Espero que esta información te sea de ayuda. ¡Disfrutalo!
-
-
-
 #### Animaciones, transiciones y transformaciones
 
-Un ejemplo básico de animación en CSS sería x Kholwhold un elemento flotante:
+Animación en CSS x Kholwhold, elemento flotante:
 
 ```css
 .mi-elemento {
@@ -90,7 +20,7 @@ Un ejemplo básico de animación en CSS sería x Kholwhold un elemento flotante:
 }
 ```
 
-Un ejemplo de Transición en CSS sería para cambiar el color de fondo sobre una hoover:
+Transición en CSS para cambiar el color de fondo sobre una hoover:
 
 ```css
 .mi-elemento {
@@ -103,7 +33,7 @@ Un ejemplo de Transición en CSS sería para cambiar el color de fondo sobre una
 }
 ```
 
-Por último, un ejemplo de Transformación en CSS sería para mover un elemento con `translateX()`:
+Transformación en CSS para mover un elemento con `translateX()`:
 
 ```css
 .mi-elemento {
@@ -122,10 +52,7 @@ Por último, un ejemplo de Transformación en CSS sería para mover un elemento 
 
 Las clases CSS pueden aplicarse a cualquier elemento HTML, ya sea un contenedor, texto, imágenes, vídeos, etc. Algunas etiquetas comunes donde suelen usarse las clases son `<div>`, `<p>`, `<span>`, `<h1>-<h6>`, `<ul>`, `<ol>`, `<li>` , `<img>`, `<video>` y `<a>`.
 
-You
----
-
-Aplica una animación a un contenedor con un cubo
+Aplicar una animación a un contenedor con un cubo
 
 Puede usar la función `animation` de CSS para agregar una animación a un elemento. Por ejemplo, si quieres hacer una animación en un contenedor con un cubo, puedes intentar esto:
 
