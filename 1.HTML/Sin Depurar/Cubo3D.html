@@ -122,25 +122,32 @@
     // Initialize the buffers we'll need. For this demo, we just
     // have one object -- a simple two-dimensional cube.
     //
-    function initBuffers(context) {
+   // ...
 
-        // Create a buffer for the cube's vertex positions.
+function initBuffers(context) {
 
-        const positionBuffer = context.createBuffer();
+    // Create a buffer for the cube's vertex positions.
 
-        // Select the positionBuffer as the one to apply buffer
-        // operations to from here out.
+    const positionBuffer = context.createBuffer();
 
-        context.bindBuffer(context.ARRAY\_BUFFER, positionBuffer);
+    // Select the positionBuffer as the one to apply buffer
+    // operations to from here out.
 
-// Now pass the list of positions into WebGL to build the shape. We do this by creating a Float32Array from the JavaScript array, then use it to fill the current buffer.  
-const positions = \[
-\-1.0, 1.0,
-1.0, 1.0,
-\-1.0, -1.0,
-1.0, -1.0,
-\];
-context.bufferData(context.ARRAY\_BUFFER, new Float32Array(positions), context.STATIC\_DRAW);
+    context.bindBuffer(context.ARRAY_BUFFER, positionBuffer);
 
+    const positions = [        -1.0, 1.0,        1.0, 1.0,        -1.0, -1.0,        1.0, -1.0,    ];
+
+    context.bufferData(context.ARRAY_BUFFER, new Float32Array(positions), context.STATIC_DRAW);
+
+    return {
+        position: positionBuffer,
+    };
+}
+
+// ...
+
+const buffers = initBuffers(context);
+drawScene(context, programInfo, buffers);
+</script>
 </body>
 </html>

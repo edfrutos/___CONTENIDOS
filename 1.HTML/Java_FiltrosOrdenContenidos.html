@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtros y Ordenación de Contenidos</title>
+    <!--Librerías Prism:-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism.min.css" rel="stylesheet" />
+<style>
+    header {
+        text-align: center;
+        background-color: #3f2192;
+        color: #fff;
+        border-bottom: 1px solid #3f2192;
+        border-top: 1px solid #3f2192;
+        border-radius: 5px;
+        padding: 20px;
+    }
+    h1 {
+        font-size: 1.2em;
+        font-weight: bold;
+        margin: 0;
+        padding: 0;
+
+    }
+    p {
+        width: 40%;
+        text-align: justify;
+        margin-left: 500px;
+        font-size: 18px;
+
+
+    }
+    .code {
+        font-weight: 600;
+    }
+</style>
+</head>
+<body>
+    <header><h1>Filtros y Ordenación de Contenidos</h1></header>
+    <p>Para crear filtros y ordenar contenidos puedes utilizar JavaScript.</p>
+    <p>Por ejemplo, si tienes una lista de elementos en un array, puedes usar el método <code class="code">sort()</code> para ordenarlos. <br>El siguiente código mostrará un ejemplo:</p>
+<!--INICIO Código para ventana fragmento con copy-->
+<div id="code-window">
+    <div id="code-header">
+        <span>Code JS</span>
+        <button id="copy-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path fill="none" d="M0 0h24v24H0z" />
+                <path
+                    d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+            </svg>
+            <span>Copy Code</span>
+        </button>
+    </div>
+    <pre><code id="code-input" class="language-js">
+
+  <textarea>
+    let myList = ['John', 'Bob', 'Ann', 'Stuart'];
+
+    myList.sort();
+    // ahora el array quedaría así ['Ann', 'Bob', 'John', 'Stuart']    
+  </textarea>
+</code></pre>
+</div>
+<!--FIN Código para ventana fragmento con copy-->
+<p>Para crear filtros, puedes usar el método <code class="code">filter()</code>, que devolverá un nuevo array con los elementos que cumplan con la condición dada. <br>El siguiente código mostrará un ejemplo:</p>
+<!--INICIO Código para ventana fragmento con copy-->
+<div id="code-window">
+    <div id="code-header">
+        <span>Code JS</span>
+        <button id="copy-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path fill="none" d="M0 0h24v24H0z" />
+                <path
+                    d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+            </svg>
+            <span>Copy Code</span>
+        </button>
+    </div>
+    <pre><code id="code-input" class="language-js">
+
+  <textarea>
+    let myList = [1,2,3,4,5,6,7,8,9];
+
+    let result = myList.filter((val) => val  >= 5); 
+    // ahora el array result sería [5,6,7,8,9]
+  </textarea>
+</code></pre>
+</div>
+<!--FIN Código para ventana fragmento con copy-->
+<p>Para realizar búsquedas sobre contenidos, puedes utilizar el método <code class="code">indexOf()</code>. <br>El siguiente código mostrará un ejemplo de como usar el método:</p>
+<!--INICIO Código para ventana fragmento con copy-->
+<div id="code-window">
+    <div id="code-header">
+        <span>Code JS</span>
+        <button id="copy-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path fill="none" d="M0 0h24v24H0z" />
+                <path
+                    d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+            </svg>
+            <span>Copy Code</span>
+        </button>
+    </div>
+    <pre><code id="code-input" class="language-js">
+
+  <textarea>
+    let myList = ['John', 'Bob', 'Ann', 'Stuart'];
+
+    let result = myList.indexOf('Ann'); // Devuelve 2, porque 'Ann' está en la posición 2 del array
+  </textarea>
+</code></pre>
+</div>
+<!--FIN Código para ventana fragmento con copy-->
+<p>Hay muchas funciones que puedes integrar en Javascript. Por ejemplo, para realizar operaciones matemáticas, puedes usar el objeto <code class="code">Math</code> <br>El siguiente código mostrará un ejemplo de su uso:</p>
+ <!--INICIO Código para ventana fragmento con copy-->
+<div id="code-window">
+    <div id="code-header">
+        <span>Code JS</span>
+        <button id="copy-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path fill="none" d="M0 0h24v24H0z" />
+                <path
+                    d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+            </svg>
+            <span>Copy Code</span>
+        </button>
+    </div>
+    <pre><code id="code-input" class="language-js">
+
+  <textarea>
+    let a = 4;
+    let b = 6;
+    
+    let suma = Math.add(a,b); // Devuelve 10
+    let resta = Math.sub(a,b); // Devuelve -2
+  </textarea>
+</code></pre>
+</div>
+<!--FIN Código para ventana fragmento con copy-->
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Código HTML, CSS y JavaScript para aplicar filtros, ordenación y búsqueda de contenidos</title>
+    <!--Librerías Prism:-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism.min.css" rel="stylesheet" />
+    <style>
+    header {
+        background-color: #3F2192;
+        padding: 25px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    h1 {
+        color: #FFF;
+    }
+
+    .span {
+        margin-left: 30px;
+        font-weight: 600;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <h1>Código html, css y javascript para aplicar filtros, ordenación y búsqueda de contenidos</h1>
+    </header>
+    <!--INICIO Código para ventana fragmento con copy-->
+<div id="code-window">
+    <div id="code-header">
+        <span class="span">Code HTML</span>
+        <button id="copy-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path fill="none" d="M0 0h24v24H0z" />
+                <path
+                    d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+            </svg>
+            <span class="span">Copy Code</span>
+        </button>
+    </div>
+    <pre><code id="code-input" class="language-html">
+
+  <textarea>
+    <div id="container">
+        <div class="filters"> 
+            <form> 
+                <!-- Insert filter elements here --> 
+            </form> 
+        </div> 
+     
+        <div class="search"> 
+            <input type="text" placeholder="Search..."> 
+        </div> 
+     
+        <div class="content"> 
+            <!-- Place content here --> 
+        </div>
+    </div>
+  </textarea>
+</code></pre>
+</div>
+<!--FIN Código para ventana fragmento con copy-->
+<!--INICIO Código para ventana fragmento con copy-->
+<div id="code-window">
+    <div id="code-header">
+        <span class="span">Code CSS</span>
+        <button id="copy-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path fill="none" d="M0 0h24v24H0z" />
+                <path
+                    d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+            </svg>
+            <span class="span">Copy Code</span>
+        </button>
+    </div>
+    <pre><code id="code-input" class="language-css">
+
+  <textarea>
+    #container {
+        position: relative;
+    }
+    
+    .filters {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20%;
+        height: 100%;
+        box-sizing: border-box;
+        padding: 0 1em;
+        overflow-y: auto;
+        border-right: 1px solid #666;
+        background: #FFF;
+    }
+    
+    .search {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 15%;
+        height: 3em;
+        margin: 1em;
+        padding: 0 1em;
+        border: 1px solid #666;
+        background: #FFF;
+    }
+    
+    .content {
+        position: absolute;
+        top: 4em;
+        right: 0;
+        width: 78%;
+        height: calc(100% - 12em);
+        margin: 1em;
+        overflow-y: auto;
+        padding: 1em;
+        background: #FFF;
+        box-sizing: border-box;
+        border: 1px solid #666;
+    }
+  </textarea>
+</code></pre>
+</div>
+<!--FIN Código para ventana fragmento con copy-->
+<!--INICIO Código para ventana fragmento con copy-->
+<div id="code-window">
+    <div id="code-header">
+        <span class="span">Code JS</span>
+        <button id="copy-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path fill="none" d="M0 0h24v24H0z" />
+                <path
+                    d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+            </svg>
+            <span class="span">Copy Code</span>
+        </button>
+    </div>
+    <pre><code id="code-input" class="language-js">
+
+  <textarea>
+// Get the DOM elements we are working with
+const container = document.getElementById('container');
+const filtersForm = container.querySelector('.filters form');
+const searchForm = container.querySelector('.search form');
+const content = container.querySelector('.content');
+ 
+// Add event listeners to all filter inputs and the search box
+const filterInputs = document.querySelectorAll('.filters input');
+const searchInput = document.querySelector('.search input');
+ 
+// This method will be fired whenever the user changes any of the filters
+const onFilterChange = () => {
+    // Retrieve all selected filters
+    let filters = [].filter.call(filterInputs, (input) => {
+         return input.checked;
+    });
+ 
+    // Filter content by selected filters
+    // ...
+};
+
+// This method will be fired whenever the user performs a search
+const onSearch = () => {
+    // Retrieve search query
+    const query = searchInput.value;
+ 
+    // Search content by query
+    // ...
+};
+ 
+// Finally attach all necessary event listeners 
+filterInputs.forEach((input) => {
+    input.addEventListener('change', onFilterChange);  
+});
+
+searchInput.addEventListener('keyup', onSearch);
+  </textarea>
+</code></pre>
+</div>
+<!--FIN Código para ventana fragmento con copy-->
+</body>
+</html>

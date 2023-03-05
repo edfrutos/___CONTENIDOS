@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+          }
+          
+          header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+          }
+          
+          nav {
+            background-color: #ccc;
+            padding: 10px;
+            text-align: center;
+          }
+          
+          nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: inline-block;
+          }
+          
+          nav li {
+            display: inline-block;
+            margin-right: 10px;
+          }
+          
+          main {
+            padding: 20px;
+          }
+          
+          section {
+            padding: 20px;
+          }
+          
+          aside {
+            background-color: #eee;
+            padding: 10px;
+          }
+          
+          footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+          }
+
+          .contenido-seccion {
+            display: none;
+            }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Aprende HTML, CSS y JavaScript</h1>
+      </header>
+      <nav>
+        <ul>
+          <li><a href="#cursos">Cursos</a></li>
+          <li><a href="#manuales">Manuales</a></li>
+          <li><a href="#tutoriales">Tutoriales</a></li>
+        </ul>
+      </nav>
+    <main>
+        <section id="filtro-seccion">
+          <h2>Filtrar por:</h2>
+          <select id="filtro">
+            <option value="todos">Todos</option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript">JavaScript</option>
+          </select>
+          <button id="boton-filtro">Filtrar</button>
+        </section>
+        <section id="busqueda-seccion">
+          <h2>Buscar:</h2>
+          <form id="form-busqueda">
+            <input type="text" id="busqueda" placeholder="Ingresar término a buscar">
+            <button type="submit">Buscar</button>
+          </form>
+        </section>
+        <section id="contenido-html">
+          <h2>Cursos y manuales de HTML</h2>
+          <div class="contenido-seccion html">
+            <!-- Aquí se incluirán los cursos y manuales de HTML disponibles -->
+          </div>
+        </section>
+        <section id="contenido-css">
+          <h2>Cursos y manuales de CSS</h2>
+          <div class="contenido-seccion css">
+            <!-- Aquí se incluirán los cursos y manuales de CSS disponibles -->
+          </div>
+        </section>
+        <section id="contenido-javascript">
+          <h2>Cursos y manuales de JavaScript</h2>
+          <div class="contenido-seccion javascript">
+            <!-- Aquí se incluirán los cursos y manuales de JavaScript disponibles -->
+          </div>
+        </section>
+      </main>
+      <aside>
+        <h2>Recursos adicionales</h2>
+        <p>Aquí se incluirán enlaces a recursos adicionales para aprender HTML, CSS y JavaScript.</p>
+      </aside>
+      <footer>
+        <p>&copy; 2023 - EDF Aprende HTML, CSS y JavaScript</p>
+      </footer>
+      <script>
+// Función que realiza la búsqueda de términos
+function buscarTerminos() {
+    // Obtener el término a buscar
+    var busqueda = document.getElementById("busqueda").value;
+    // Obtener los contenedores de cada sección de contenido
+    var contenidoHTML = document.getElementsByClassName("contenido-seccion html");
+    var contenidoCSS = document.getElementsByClassName("contenido-seccion css");
+    var contenidoJavaScript = document.getElementsByClassName("contenido-seccion javascript");
+    // Ocultar todos los elementos de cada sección
+    for (var i = 0; i < contenidoHTML.length; i++) {
+      contenidoHTML[i].style.display = "none";
+    }
+    for (var i = 0; i < contenidoCSS.length; i++) {
+      contenidoCSS[i].style.display = "none";
+    }
+    for (var i = 0; i < contenidoJavaScript.length; i++) {
+      contenidoJavaScript[i].style.display = "none";
+    }
+    // Mostrar solamente los elementos que contengan el término buscado
+    var terminosHTML = document.getElementsByClassName("termino-html");
+    for (var i = 0; i < terminosHTML.length; i++) {
+      if (terminosHTML[i].innerHTML.toLowerCase().includes(busqueda.toLowerCase())) {
+        terminosHTML[i].parentElement.style.display = "block";
+      }
+    }
+    var terminosCSS = document.getElementsByClassName("termino-css");
+    for (var i = 0; i < terminosCSS.length; i++) {
+      if (terminosCSS[i].innerHTML.toLowerCase().includes(busqueda.toLowerCase())) {
+        terminosCSS[i].parentElement.style.display = "block";
+      }
+    }
+    var terminosJavaScript = document.getElementsByClassName("termino-javascript");
+    for (var i = 0; i < terminosJavaScript.length; i++) {
+      if (terminosJavaScript[i].innerHTML.toLowerCase().includes(busqueda.toLowerCase())) {
+        terminosJavaScript[i].parentElement.style.display = "block";
+      }
+    }
+  }
+  
+  // Submit del formulario de búsqueda
+  document.getElementById("form-busqueda").addEventListener("submit", function(event) {
+    event.preventDefault();
+    buscarTerminos();
+  });
+  
+      </script>
+</body>
+</html>

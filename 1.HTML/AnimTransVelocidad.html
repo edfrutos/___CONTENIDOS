@@ -35,11 +35,9 @@
             <pre><code id="code-input" class="language-css">
 
           <textarea>
-            Aquí empieza---------------------------
             element {
                 transition: all 0.5s ease-in-out;
             }
-            Aquí termina----------------------------------
           </textarea>
         </code>
     </pre>
@@ -82,7 +80,7 @@
         <!--INICIO Código para ventana fragmento con copy-->
         <div id="code-window">
             <div id="code-header">
-                <span>Code JS</span>
+                <span>Code CSS</span>
                 <button id="copy-btn">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                         <path fill="none" d="M0 0h24v24H0z" />
@@ -92,7 +90,7 @@
                     <span>Copy Code</span>
                 </button>
             </div>
-            <pre><code id="code-input" class="language-js">
+            <pre><code id="code-input" class="language-css">
 
           <textarea>
             element.style.transition = "all 0.5s ease-in-out";
@@ -105,7 +103,7 @@
         <!--INICIO Código para ventana fragmento con copy-->
         <div id="code-window">
             <div id="code-header">
-                <span>Code JS</span>
+                <span>Code CSS</span>
                 <button id="copy-btn">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                         <path fill="none" d="M0 0h24v24H0z" />
@@ -115,7 +113,7 @@
                     <span>Copy Code</span>
                 </button>
             </div>
-            <pre><code id="code-input" class="language-js">
+            <pre><code id="code-input" class="language-css">
           <textarea>
             element.style.animationDuration = "3s";
         </textarea>
@@ -124,6 +122,160 @@
         <!--FIN Código para ventana fragmento con copy-->
         </code></pre>
         </div>
+        <li>Animación en CSS x Kholwhold, elemento flotante:</li>
+         <!--INICIO Código para ventana fragmento con copy-->
+         <div id="code-window">
+            <div id="code-header">
+                <span>Code CSS</span>
+                <button id="copy-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="none" d="M0 0h24v24H0z" />
+                        <path
+                            d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+                    </svg>
+                    <span>Copy Code</span>
+                </button>
+            </div>
+            <pre><code id="code-input" class="language-css">
+          <textarea>
+            .mi-elemento {
+                position: relative;
+                animation: mi-elemento-flotante 5s linear infinite;
+            }
+            
+            @keyframes mi-elemento-flotante {
+                0%   { top: 0px; }
+                25%  { top: 10px; }
+                50%  { top: 20px; }
+                75%  { top: 10px; }
+                100% { top: 0px; }
+            }
+        </textarea>
+        </code></pre>
+        </div>
+        <!--FIN Código para ventana fragmento con copy-->
+<li>Transición en CSS para cambiar el color de fondo sobre una hoover:</li>
+<li>Animación en CSS x Kholwhold, elemento flotante:</li>
+         <!--INICIO Código para ventana fragmento con copy-->
+         <div id="code-window">
+            <div id="code-header">
+                <span>Code CSS</span>
+                <button id="copy-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="none" d="M0 0h24v24H0z" />
+                        <path
+                            d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+                    </svg>
+                    <span>Copy Code</span>
+                </button>
+            </div>
+            <pre><code id="code-input" class="language-css">
+          <textarea>
+            .mi-elemento {
+                background-color: blue;
+                transition: background-color 1s ease-in;
+            }
+            
+            .mi-elemento:hover {
+                background-color: green;
+            }
+        </textarea>
+        </code></pre>
+        </div>
+        <!--FIN Código para ventana fragmento con copy-->
+       <li>Transformación en CSS para mover un elemento con <strong><code>translateX()</code></strong>:</li>
+<!--INICIO Código para ventana fragmento con copy-->
+<div id="code-window">
+    <div id="code-header">
+        <span>Code CSS</span>
+        <button id="copy-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path fill="none" d="M0 0h24v24H0z" />
+                <path
+                    d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+            </svg>
+            <span>Copy Code</span>
+        </button>
+    </div>
+    <pre><code id="code-input" class="language-css">
+  <textarea>
+    .mi-elemento {
+        position: relative;
+        animation: mi-elemento-movido 5s linear infinite;
+    }
+    
+    @keyframes mi-elemento-movido {
+        0%   { transform: translateX(0px); }
+        25%  { transform: translateX(50px); }
+        50%  { transform: translateX(100px); }
+        75%  { transform: translateX(50px); }
+        100% { transform: translateX(0px); }
+    }
+</textarea>
+</code></pre>
+</div>
+<!--FIN Código para ventana fragmento con copy-->
+<p>Las clases CSS pueden aplicarse a cualquier elemento HTML, ya sea un contenedor, texto, imágenes, vídeos, etc. Algunas etiquetas comunes donde suelen usarse las clases son 
+     <!--INICIO Código para ventana fragmento con copy-->
+<div id="code-window">
+    <div id="code-header">
+        <span>Code HTML</span>
+        <button id="copy-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path fill="none" d="M0 0h24v24H0z" />
+                <path
+                    d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+            </svg>
+            <span>Copy Code</span>
+        </button>
+    </div>
+    <pre><code id="code-input" class="language-html">
+  <textarea>
+    <div>, <p>, <span>, <h1>-<h6>, <ul>, <ol>, <li> , <img>, <video> y <a>.</p>
+      
+</textarea>
+</code></pre>
+</div>
+<!--FIN Código para ventana fragmento con copy--> 
+<li>
+    Puede usar la función <strong><code>animation</code></strong> de CSS para agregar una animación a un elemento. Por ejemplo, si quieres hacer una animación en un contenedor con un cubo, puedes intentar esto:
+
+</li>
+<!--INICIO Código para ventana fragmento con copy-->
+<div id="code-window">
+    <div id="code-header">
+        <span>Code CSS</span>
+        <button id="copy-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path fill="none" d="M0 0h24v24H0z" />
+                <path
+                    d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+            </svg>
+            <span>Copy Code</span>
+        </button>
+    </div>
+    <pre><code id="code-input" class="language-css">
+
+  <textarea>
+    .container {
+        animation: cube-transition 2s;
+      }
+      
+      @keyframes cube-transition {
+        0% {
+          transform: rotateY(45deg);
+        }
+        80% {
+          transform: rotateY(0deg);
+        }
+        100% {
+          transform: rotateY(-45deg);
+        }
+      }
+  </textarea>
+</code></pre>
+</div>
+<!--FIN Código para ventana fragmento con copy-->
     </ul>
     <script>
         // Función para ajustar la altura de la ventana de código a la altura de la entrada de código
