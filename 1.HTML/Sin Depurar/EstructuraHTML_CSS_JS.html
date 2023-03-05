@@ -185,7 +185,10 @@ mostrarMensaje();
 
 Esta es una estructura básica de una página web que trata sobre cursos, manuales, tutoriales y aprendizaje de HTML, CSS y JavaScript. Se puede personalizar y añadir más contenido y funcionalidades a medida que se avanza en el aprendizaje.
 
-Para filtrar los cursos, manuales y tutoriales en base a cada uno de los lenguajes HTML, CSS y JavaScript, se pueden utilizar diferentes estrategias. Una posible solución sería utilizar JavaScript para crear una función que filtre el contenido en base a una selección del usuario.
+Para filtrar los cursos, manuales y tutoriales en base a cada uno de los lenguajes HTML, CSS y JavaScript, 
+se pueden utilizar diferentes estrategias. 
+Una posible solución sería utilizar JavaScript para crear una función que filtre el contenido en base a una 
+selección del usuario.
 HTML:
 
 <main>
@@ -232,10 +235,14 @@ botonFiltro.addEventListener("click", filtrarContenido);
 </script>
 
 
-En este ejemplo se ha creado una función que filtra el contenido de cursos en base a la selección del usuario. La función oculta todos los cursos y muestra solo aquellos que coincidan con la selección. Esta función se asocia al botón de filtro mediante el evento "click".
+En este ejemplo se ha creado una función que filtra el contenido de cursos en base a la selección del usuario. 
+La función oculta todos los cursos y muestra solo aquellos que coincidan con la selección. Esta función se 
+asocia al botón de filtro mediante el evento "click".
 Esta solución puede ser adaptada a las secciones de manuales y tutoriales de la misma manera.
 
-Para adaptar el filtrado a todas las secciones de cursos, manuales y tutoriales, se pueden utilizar las mismas técnicas que en el ejemplo anterior, pero agrupando todos los contenidos en una sola sección y añadiendo una clase para identificar el tipo de contenido.
+Para adaptar el filtrado a todas las secciones de cursos, manuales y tutoriales, se pueden utilizar las mismas 
+técnicas que en el ejemplo anterior, pero agrupando todos los contenidos en una sola sección y añadiendo una 
+clase para identificar el tipo de contenido.
 HTML:
 
 <main>
@@ -290,9 +297,11 @@ function filtrarContenido() {
 var botonFiltro = document.getElementById("boton-filtro");
 botonFiltro.addEventListener("click", filtrarContenido);
 
-En este ejemplo se ha agrupado todo el contenido de cursos, manuales y tutoriales en una sola sección y se ha añadido una clase para identificar
+En este ejemplo se ha agrupado todo el contenido de cursos, manuales y tutoriales en una sola 
+sección y se ha añadido una clase para identificar
 
-Para tener una sección por cada lenguaje, se puede crear una sección para cada uno de ellos y ocultarlas o mostrarlas en base a la selección del usuario.
+Para tener una sección por cada lenguaje, se puede crear una sección para cada uno de ellos 
+y ocultarlas o mostrarlas en base a la selección del usuario.
 HTML:
 
 <main>
@@ -351,7 +360,10 @@ function filtrarContenido() {
   }
 }
 
-Para agregar un buscador de términos utilizados en cada uno de los lenguajes, se puede crear un formulario que permita al usuario ingresar el término a buscar y una función en JavaScript que realice la búsqueda en base a los términos disponibles en cada sección.
+Para agregar un buscador de términos utilizados en cada uno de los lenguajes, 
+se puede crear un formulario que permita al usuario ingresar el término a buscar 
+y una función en JavaScript que realice la búsqueda en base a los términos disponibles 
+en cada sección.
 HTML:
 
 <main>
@@ -446,9 +458,12 @@ CSS:
 display: none;
 }
 
-Nota: Este código es solo un ejemplo básico y puede ser mejorado o adaptado según las necesidades específicas de la página.
+Nota: Este código es solo un ejemplo básico y puede ser mejorado o adaptado según las necesidades 
+específicas de la página.
 
-Para crear una ventana que se pueda insertar en cualquier parte del contenido y que muestre fragmentos de código sin formato, primero debes agregar la librería Prism a tu página. Esto se puede hacer descargando el archivo CSS y JavaScript de la librería o incluyendo los enlaces a los archivos desde un servidor externo.
+Para crear una ventana que se pueda insertar en cualquier parte del contenido y que muestre fragmentos 
+de código sin formato, primero debes agregar la librería Prism a tu página. Esto se puede hacer descargando 
+el archivo CSS y JavaScript de la librería o incluyendo los enlaces a los archivos desde un servidor externo.
 Luego, debes agregar un contenedor HTML para cada fragmento de código que quieras mostrar. Por ejemplo:
 html:
 
@@ -456,7 +471,8 @@ html:
 // Aquí va tu código
 </code></pre>
 
-El atributo <code>class</code> se utiliza para especificar el lenguaje de programación utilizado en el fragmento de código. En este ejemplo, se utiliza <code>javascript</code>.
+El atributo <code>class</code> se utiliza para especificar el lenguaje de programación utilizado en el 
+fragmento de código. En este ejemplo, se utiliza <code>javascript</code>.
 Después, debes agregar la siguiente hoja de estilos CSS para dar formato a la ventana:
 css:
 
@@ -475,9 +491,11 @@ html:
   Prism.highlightAll();
 </script>
 
-Con estos pasos, ya deberías tener una ventana que muestre fragmentos de código sin formato con la tipografía adecuada a cada lenguaje.
+Con estos pasos, ya deberías tener una ventana que muestre fragmentos de código sin formato con la tipografía 
+adecuada a cada lenguaje.
 
-Para incluir los enlaces a los archivos desde un servidor externo, debes agregar los siguientes elementos <code>link</code> y <code>script</code> en la sección <code>head</code> de tu página HTML:
+Para incluir los enlaces a los archivos desde un servidor externo, debes agregar los siguientes 
+elementos <code>link</code> y <code>script</code> en la sección <code>head</code> de tu página HTML:
 HTML:
 
 <head>
@@ -486,9 +504,13 @@ HTML:
   <script src="https://cdn.jsdelivr.net/npm/prismjs@1.22.0/prism.min.js"></script>
 </head>
 
-Con estos enlaces, ya estás incluyendo la librería Prism en tu página desde un servidor externo. A partir de aquí, puedes seguir los pasos descritos en mi respuesta anterior para crear la ventana que muestra fragmentos de código sin formato.
+Con estos enlaces, ya estás incluyendo la librería Prism en tu página desde un servidor externo. 
+A partir de aquí, puedes seguir los pasos descritos en mi respuesta anterior para crear la ventana 
+que muestra fragmentos de código sin formato.
 
-El código JavaScript para inicializar la librería Prism en la página debe ser agregado justo antes del cierre de la etiqueta <code>body</code>, de manera que todos los elementos de la página estén cargados antes de ejecutar el código:
+El código JavaScript para inicializar la librería Prism en la página debe ser agregado justo antes 
+del cierre de la etiqueta <code>body</code>, de manera que todos los elementos de la página estén 
+cargados antes de ejecutar el código:
 HTML:
 
 <body>
@@ -498,9 +520,12 @@ HTML:
   </script>
 </body>
 ```
-Con esto, aseguramos que la librería Prism esté inicializada correctamente y aplique la tipografía adecuada a los fragmentos de código sin formato.
+Con esto, aseguramos que la librería Prism esté inicializada correctamente y aplique la tipografía 
+adecuada a los fragmentos de código sin formato.
 
-Para agregar un encabezado con un icono SVG y el texto "Copiar código" fuera de la ventana de fragmento de código, puedes utilizar un elemento <code>div</code> para contener el icono y el texto, y añadir un botón para copiar el fragmento de código. Aquí te muestro un ejemplo:
+Para agregar un encabezado con un icono SVG y el texto "Copiar código" fuera de la ventana de fragmento 
+de código, puedes utilizar un elemento <code>div</code> para contener el icono y el texto, y añadir un 
+botón para copiar el fragmento de código. Aquí te muestro un ejemplo:
 HTML:
 
 <div class="code-header">
@@ -541,7 +566,8 @@ css:
   cursor: pointer;
 }
 
-Por último, puedes agregar una función JavaScript para copiar el fragmento de código al hacer clic en el botón "Copiar código":
+Por último, puedes agregar una función JavaScript para copiar el fragmento de código al hacer 
+clic en el botón "Copiar código":
 HTML:
 
 <script>
@@ -559,9 +585,11 @@ HTML:
   });
 </script>
 
-Con esto, ya tendrías un encabezado con un icono SVG, el texto "Copiar código" y un botón para copiar el fragmento de código, todo fuera de la ventana de fragmento de código.
+Con esto, ya tendrías un encabezado con un icono SVG, el texto "Copiar código" y un botón para 
+copiar el fragmento de código, todo fuera de la ventana de fragmento de código.
 
-Para hacer que la página sea responsiva, puedes utilizar media queries en CSS. Estas media queries te permiten definir diferentes estilos para diferentes tamaños de pantalla. Aquí te muestro un ejemplo:
+Para hacer que la página sea responsiva, puedes utilizar media queries en CSS. Estas media queries 
+te permiten definir diferentes estilos para diferentes tamaños de pantalla. Aquí te muestro un ejemplo:
 CSS:
 
 @media only screen and (max-width: 600px) {
@@ -577,7 +605,9 @@ CSS:
 }
 
 
-Con estos estilos, puedes hacer que la página se adapte a diferentes tamaños de pantalla y sea más fácil de usar en dispositivos móviles. Por ejemplo, puedes hacer que los elementos se ajusten a una pantalla más pequeña, o que se reorganicen de manera diferente en función del tamaño de la pantalla.
+Con estos estilos, puedes hacer que la página se adapte a diferentes tamaños de pantalla y sea 
+más fácil de usar en dispositivos móviles. Por ejemplo, puedes hacer que los elementos se ajusten 
+a una pantalla más pequeña, o que se reorganicen de manera diferente en función del tamaño de la pantalla.
 
 Aquí te muestro un ejemplo de código CSS que le puedes aplicar a la estructura HTML que hemos estado construyendo:
 css:
@@ -669,9 +699,13 @@ header h1 {
   background-color: #fff;
 }
 
-Este código le da un estilo básico a la estructura HTML que hemos construido, pero puedes personalizarlo a tu gusto agregando o modificando estilos.
+Este código le da un estilo básico a la estructura HTML que hemos construido, pero puedes personalizarlo 
+a tu gusto agregando o modificando estilos.
 
-Para centrar el contenido de la página en modo responsive, se puede utilizar CSS y una técnica de diseño responsivo como el diseño centrado o "center-aligned design". Se puede lograr esto agregando una regla CSS a la etiqueta principal de contenido (por ejemplo, una etiqueta div) con un ancho máximo y un margen automático en ambos lados.
+Para centrar el contenido de la página en modo responsive, se puede utilizar CSS y una técnica de diseño 
+responsivo como el diseño centrado o "center-aligned design". Se puede lograr esto agregando una regla CSS 
+a la etiqueta principal de contenido (por ejemplo, una etiqueta div) con un ancho máximo y un margen 
+automático en ambos lados.
 css:
 
 .main-content {
@@ -679,7 +713,8 @@ css:
   margin: 0 auto;
 }
 
-Para aplicar colores azulados a los diferentes apartados del contenido, se pueden definir clases CSS con los colores deseados y aplicarlas a las etiquetas correspondientes en el HTML.
+Para aplicar colores azulados a los diferentes apartados del contenido, se pueden definir clases CSS 
+con los colores deseados y aplicarlas a las etiquetas correspondientes en el HTML.
 css: y HTML:
 
 .blue-section {
@@ -691,9 +726,11 @@ css: y HTML:
   <!-- Contenido de la sección azulada -->
 </section>
 
-Es importante tener en cuenta que la sintaxis y las técnicas específicas pueden variar dependiendo de las necesidades y preferencias de diseño de la página.
+Es importante tener en cuenta que la sintaxis y las técnicas específicas pueden variar dependiendo 
+de las necesidades y preferencias de diseño de la página.
 
-Para crear estilos específicos para pantallas de tamaño máximo de 600px, se puede utilizar una regla CSS @media. La siguiente regla limita el ancho máximo de la página a 600px y ajusta el tamaño de fuente para adaptarse a la pantalla más pequeña.
+Para crear estilos específicos para pantallas de tamaño máximo de 600px, se puede utilizar una 
+regla CSS @media. La siguiente regla limita el ancho máximo de la página a 600px y ajusta el tamaño de fuente para adaptarse a la pantalla más pequeña.
 css:
 
 @media only screen and (max-width: 600px) {
@@ -705,10 +742,14 @@ css:
   }
 }
 
-Además de los ajustes de ancho y tamaño de fuente, se pueden agregar otros estilos para mejorar la experiencia de usuario en pantallas más pequeñas, como ocultar elementos no esenciales, reorganizar el contenido y ajustar el espaciado.
+Además de los ajustes de ancho y tamaño de fuente, se pueden agregar otros estilos para mejorar 
+la experiencia de usuario en pantallas más pequeñas, como ocultar elementos no esenciales, reorganizar 
+el contenido y ajustar el espaciado.
 
 Aquí hay algunas sugerencias para mejorar la experiencia de usuario en pantallas más pequeñas:
-<li>Ocultar elementos no esenciales: Utilice la regla CSS <code>display: none</code> para ocultar elementos que no sean necesarios en pantallas más pequeñas. Por ejemplo, se puede ocultar un menú de navegación secundario o una barra lateral en pantallas más pequeñas.</li>
+<li>Ocultar elementos no esenciales: Utilice la regla CSS <code>display: none</code> para ocultar 
+  elementos que no sean necesarios en pantallas más pequeñas. Por ejemplo, se puede ocultar un menú 
+  de navegación secundario o una barra lateral en pantallas más pequeñas.</li>
 css:
 
 @media only screen and (max-width: 600px) {
@@ -717,7 +758,9 @@ css:
   }
 }
 
-<li>Reorganizar el contenido: Utilice las reglas CSS de flexbox o grid para reorganizar el contenido en un formato más apropiado para pantallas más pequeñas. Por ejemplo, se puede cambiar de una disposición de dos columnas a una disposición de una columna.</li>
+<li>Reorganizar el contenido: Utilice las reglas CSS de flexbox o grid para reorganizar el 
+  contenido en un formato más apropiado para pantallas más pequeñas. Por ejemplo, se puede 
+  cambiar de una disposición de dos columnas a una disposición de una columna.</li>
 css:
 
 @media only screen and (max-width: 600px) {
@@ -738,9 +781,12 @@ css:
     padding: 10px;
   }
 }
-Estas son solo algunas de las muchas maneras de mejorar la experiencia de usuario en pantallas más pequeñas con CSS. La clave es experimentar y encontrar lo que funciona mejor para su contenido y su público objetivo.
+Estas son solo algunas de las muchas maneras de mejorar la experiencia de usuario en pantallas 
+más pequeñas con CSS. La clave es experimentar y encontrar lo que funciona mejor para su contenido 
+y su público objetivo.
 
-Puedes utilizar media queries en CSS para limitar el tamaño de la ventana de fragmento y ajustar el encabezado al mismo tamaño en pantallas más pequeñas. Sería algo así:
+Puedes utilizar media queries en CSS para limitar el tamaño de la ventana de fragmento y ajustar 
+el encabezado al mismo tamaño en pantallas más pequeñas. Sería algo así:
 
 @media screen and (max-width: 600px) {
   .code-window {
@@ -752,9 +798,12 @@ Puedes utilizar media queries en CSS para limitar el tamaño de la ventana de fr
   }
 }
 
-Esto asegurará que la ventana de fragmento y el encabezado se adapten a la cantidad de texto sin formato y al tamaño de la pantalla, mejorando la experiencia de usuario en dispositivos más pequeños.
+Esto asegurará que la ventana de fragmento y el encabezado se adapten a la cantidad de texto 
+sin formato y al tamaño de la pantalla, mejorando la experiencia de usuario en dispositivos más pequeños.
 
-Puedes utilizar CSS para ajustar el tamaño de la ventana de fragmento de código al contenido de texto sin formato. Una forma de hacerlo es establecer un ancho máximo en porcentaje y una altura máxima en pixels para la ventana, y hacer que se ajuste automáticamente a la cantidad de contenido:
+Puedes utilizar CSS para ajustar el tamaño de la ventana de fragmento de código al contenido 
+de texto sin formato. Una forma de hacerlo es establecer un ancho máximo en porcentaje y una 
+altura máxima en pixels para la ventana, y hacer que se ajuste automáticamente a la cantidad de contenido:
 
 .code-window {
   max-width: 80%;
@@ -762,7 +811,10 @@ Puedes utilizar CSS para ajustar el tamaño de la ventana de fragmento de códig
   overflow: auto;
 }
 
-El código anterior establece un ancho máximo del 80% y una altura máxima de 500 píxeles para la ventana de fragmento de código. La propiedad <code>overflow</code> con el valor <code>auto</code> permite que la ventana se ajuste automáticamente a la cantidad de contenido y muestre barras de desplazamiento cuando sea necesario.
+El código anterior establece un ancho máximo del 80% y una altura máxima de 500 píxeles para 
+la ventana de fragmento de código. La propiedad <code>overflow</code> con el valor <code>auto</code> 
+permite que la ventana se ajuste automáticamente a la cantidad de contenido y muestre barras de 
+desplazamiento cuando sea necesario.
 
 Puedes centrar la ventana con respecto al ancho de la sección utilizando el valor <code>margin: 0 auto</code> en CSS:
 
@@ -773,13 +825,16 @@ Puedes centrar la ventana con respecto al ancho de la sección utilizando el val
   margin: 50px auto;
 }
 
-El código anterior centrará la ventana en la sección y además agrega un margen de 50 píxeles en la parte superior e inferior. También puedes utilizar el valor <code>text-align: center</code> en el contenedor que contiene la ventana para centrarla horizontalmente:
+El código anterior centrará la ventana en la sección y además agrega un margen de 50 píxeles en la parte 
+superior e inferior. También puedes utilizar el valor <code>text-align: center</code> en el contenedor 
+que contiene la ventana para centrarla horizontalmente:
 
 .container {
   text-align: center;
 }
 
-Puedes colocar estas clases en los elementos HTML correspondientes mediante la adición de la propiedad <code>class</code>:
+Puedes colocar estas clases en los elementos HTML correspondientes mediante la adición de la 
+propiedad <code>class</code>:
 
 <div class="container">
   <div class="code-window">
@@ -787,9 +842,11 @@ Puedes colocar estas clases en los elementos HTML correspondientes mediante la a
   </div>
 </div>
 
-El código anterior agrega las clases <code>container</code> y <code>code-window</code> a los elementos <code>div</code> correspondientes en HTML.
+El código anterior agrega las clases <code>container</code> y <code>code-window</code> a los 
+elementos <code>div</code> correspondientes en HTML.
 
-Puedes ajustar el encabezado en la parte superior derecha de la ventana de fragmento de código usando la propiedad <code>position</code> en CSS:
+Puedes ajustar el encabezado en la parte superior derecha de la ventana de fragmento de código 
+usando la propiedad <code>position</code> en CSS:
 
 .code-window {
   position: relative;
@@ -814,7 +871,11 @@ Puedes ajustar el encabezado en la parte superior derecha de la ventana de fragm
   margin-right: 10px;
 }
 
-El código anterior coloca la clase <code>header</code> en una posición absoluta en la parte superior derecha de la ventana de fragmento de código mediante la propiedad <code>top</code> y <code>right</code>. Además, usa la propiedad <code>display: flex</code> y <code>align-items: center</code> para alinear el icono y el texto en el centro del encabezado. Puedes ajustar el tamaño y la posición de la imagen SVG mediante las propiedades <code>height</code> y <code>width</code>.
+El código anterior coloca la clase <code>header</code> en una posición absoluta en la parte 
+superior derecha de la ventana de fragmento de código mediante la propiedad <code>top</code> y <code>right</code>. 
+Además, usa la propiedad <code>display: flex</code> y <code>align-items: center</code> para alinear el icono y 
+el texto en el centro del encabezado. Puedes ajustar el tamaño y la posición de la imagen SVG mediante las 
+propiedades <code>height</code> y <code>width</code>.
 En HTML, puedes agregar el encabezado de la siguiente manera:
 
 <div class="code-window">
@@ -843,15 +904,19 @@ body {
   }
 }
 
-En este ejemplo, el body tendrá un ancho y un alto del 100% de la pantalla de escritorio. Sin embargo, en pantallas más pequeñas (con un ancho máximo de 600px), los valores de ancho y alto serán automáticos.
+En este ejemplo, el body tendrá un ancho y un alto del 100% de la pantalla de escritorio. 
+Sin embargo, en pantallas más pequeñas (con un ancho máximo de 600px), los valores de ancho y alto serán automáticos.
 
 El tipo de botón que debes utilizar para filtrar depende de cómo desees implementar la funcionalidad.
-Si quieres que sea un botón que envié información a un servidor para realizar el filtrado, debes utilizar el tipo "submit":
+Si quieres que sea un botón que envié información a un servidor para realizar el filtrado, debes utilizar 
+el tipo "submit":
 
 <button type="submit">Filtrar</button>
 
-Si quieres que sea un botón que realice una acción en JavaScript sin enviar información a un servidor, debes utilizar el tipo "button":
+Si quieres que sea un botón que realice una acción en JavaScript sin enviar información a un servidor, 
+debes utilizar el tipo "button":
 
 <button type="button">Filtrar</button>
 
-En este último caso, debes escribir el código JavaScript para realizar la acción de filtrado y asociarlo al evento click del botón.
+En este último caso, debes escribir el código JavaScript para realizar la acción de filtrado y 
+asociarlo al evento click del botón.
