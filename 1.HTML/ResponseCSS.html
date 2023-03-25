@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Librerías Prism:-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism.min.css" rel="stylesheet" />
+    <style>
+        p {
+            font-size: 18px;
+        }
+        @media only screen and (max-width: 600px) {
+            /* Estilos para pantallas de tamaño máximo de 600px */
+        }
+
+        @media only screen and (min-width: 600px) and (max-width: 1024px) {
+            /* Estilos para pantallas con tamaño mínimo de 600px y máximo de 1024px */
+        }
+
+        @media only screen and (min-width: 1024px) {
+            /* Estilos para pantallas con tamaño mínimo de 1024px */
+        }
+
+        .main-content {
+            max-width: 80%;
+            margin: 0 auto;
+        }
+        #code-header {
+            background-color: aqua;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="main-content">
+        <ul>
+            <li>Para hacer que la página sea responsiva, puedes utilizar media queries en CSS. Estas media queries te
+                permiten definir diferentes estilos para diferentes tamaños de pantalla. 
+                <p>
+                    Aquí te muestro un ejemplo:
+                </p>
+               <!--INICIO Código para ventana fragmento con copy-->
+        <div id="code-window">
+            <div id="code-header"">
+                <span>Code CSS</span>
+                <button id="copy-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="none" d="M0 0h24v24H0z" />
+                        <path
+                            d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+                    </svg>
+                    <span>Copy Code</span>
+                </button>
+            </div>
+            <pre><code id="code-input" class="language-css">
+
+          <textarea>
+            @media only screen and (max-width: 600px) {
+                /* Estilos para pantallas de tamaño máximo de 600px */
+              }
+              
+              @media only screen and (min-width: 600px) and (max-width: 1024px) {
+                /* Estilos para pantallas con tamaño mínimo de 600px y máximo de 1024px */
+              }
+              
+              @media only screen and (min-width: 1024px) {
+                /* Estilos para pantallas con tamaño mínimo de 1024px */
+              }
+          </textarea>
+        </code></pre>
+        </div>
+        <!--FIN Código para ventana fragmento con copy-->
+        <p>
+            Con estos estilos, puedes hacer que la página se adapte a diferentes tamaños de pantalla y sea más fácil de
+            usar en dispositivos móviles. Por ejemplo, puedes hacer que los elementos se ajusten a una pantalla más
+            pequeña, o que se reorganicen de manera diferente en función del tamaño de la pantalla.
+        </p>
+            
+            </li>
+        
+        
+        <li>Este código le da un estilo básico a la estructura HTML que hemos construido, pero puedes personalizarlo a tu
+            gusto agregando o modificando estilos.</li>
+        <!--INICIO Código para ventana fragmento con copy-->
+        <div id="code-window">
+            <div id="code-header">
+                <span>Code CSS</span>
+                <button id="copy-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="none" d="M0 0h24v24H0z" />
+                        <path
+                            d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+                    </svg>
+                    <span>Copy Code</span>
+                </button>
+            </div>
+            <pre><code id="code-input" class="language-css">
+
+          <textarea>
+            body {
+                font-family: Arial, sans-serif;
+                color: #333;
+              }
+              
+              header {
+                background-color: #f2f2f2;
+                padding: 10px 20px;
+                display: flex;
+                align-items: center;
+              }
+              
+              header svg {
+                width: 30px;
+                height: 30px;
+                fill: #333;
+                margin-right: 10px;
+              }
+              
+              header h1 {
+                font-size: 22px;
+                margin: 0;
+              }
+              
+              .courses-section {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                margin-bottom: 20px;
+              }
+              
+              .course-card {
+                width: calc(33.33% - 10px);
+                background-color: #fff;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                padding: 20px;
+                text-align: center;
+                margin-bottom: 20px;
+              }
+              
+              .course-card h2 {
+                font-size: 18px;
+                margin-bottom: 10px;
+              }
+              
+              .course-card p {
+                font-size: 14px;
+                margin-bottom: 20px;
+                color: #777;
+              }
+              
+              .code-snippet {
+                background-color: #f2f2f2;
+                padding: 20px;
+                border-radius: 5px;
+                overflow: auto;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+              }
+              
+              .code-snippet .header {
+                background-color: #fff;
+                padding: 10px 20px;
+                display: flex;
+                align-items: center;
+                margin-bottom: 20px;
+              }
+              
+              .code-snippet .header h2 {
+                font-size: 18px;
+                margin: 0;
+              }
+              
+              .code-snippet .header .copy-button {
+                background-color: #333;
+                color: #fff;
+                padding: 10px 20px;
+                border-radius: 5px;
+                float: right;
+                cursor: pointer;
+              }
+              
+              .code-snippet pre {
+                font-size: 14px;
+                padding: 10px;
+                background-color: #fff;
+              }
+          </textarea>
+        </code></pre>
+        </div>
+        <!--FIN Código para ventana fragmento con copy-->
+        
+        <li>Para centrar el contenido de la página en modo responsive, se puede utilizar CSS y una técnica de diseño
+            responsivo como el diseño centrado o "center-aligned design". Se puede lograr esto agregando una regla CSS a
+            la etiqueta principal de contenido (por ejemplo, una etiqueta div) con un ancho máximo y un margen
+            automático en ambos lados.
+             <!--INICIO Código para ventana fragmento con copy-->
+        <div id="code-window">
+            <div id="code-header">
+                <span>Code CSS</span>
+                <button id="copy-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="none" d="M0 0h24v24H0z" />
+                        <path
+                            d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+                    </svg>
+                    <span>Copy Code</span>
+                </button>
+            </div>
+            <pre><code id="code-input" class="language-html">
+
+          <textarea>
+            .main-content {
+                max-width: 800px; 
+                margin: 0 auto;
+              }
+              
+          </textarea>
+        </code></pre>
+        </div>
+        <!--FIN Código para ventana fragmento con copy-->
+        </li>
+      
+        <li>
+            Para aplicar colores azulados a los diferentes apartados del contenido, se pueden definir clases CSS con los
+            colores deseados y aplicarlas a las etiquetas correspondientes en el HTML.
+            <!--INICIO Código para ventana fragmento con copy-->
+        <div id="code-window">
+            <div id="code-header">
+                <span>Code CSS</span>
+                <button id="copy-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="none" d="M0 0h24v24H0z" />
+                        <path
+                            d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+                    </svg>
+                    <span>Copy Code</span>
+                </button>
+            </div>
+            <pre><code id="code-input" class="language-css">
+
+          <textarea>
+            .blue-section {
+                background-color: #add8e6;
+                color: #333;
+              }
+          </textarea>
+        </code></pre>
+        </div>
+        <!--FIN Código para ventana fragmento con copy-->
+         <!--INICIO Código para ventana fragmento con copy-->
+         <div id="code-window">
+            <div id="code-header">
+                <span>Code HTML</span>
+                <button id="copy-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="none" d="M0 0h24v24H0z" />
+                        <path
+                            d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+                    </svg>
+                    <span>Copy Code</span>
+                </button>
+            </div>
+            <pre><code id="code-input" class="language-html">
+
+          <textarea>
+            <section class="blue-section">
+                <!-- Contenido de la sección azulada -->
+            </section>
+          </textarea>
+        </code></pre>
+        </div>
+        <!--FIN Código para ventana fragmento con copy-->
+        </li>
+        
+       
+        <li>
+            Para crear estilos específicos para pantallas de tamaño máximo de 600px, se puede utilizar una regla CSS
+            @media. La siguiente regla limita el ancho máximo de la página a 600px y ajusta el tamaño de fuente para
+            adaptarse a la pantalla más pequeña.
+             <!--INICIO Código para ventana fragmento con copy-->
+        <div id="code-window">
+            <div id="code-header">
+                <span>Code CSS</span>
+                <button id="copy-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="none" d="M0 0h24v24H0z" />
+                        <path
+                            d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+                    </svg>
+                    <span>Copy Code</span>
+                </button>
+            </div>
+            <pre><code id="code-input" class="language-css">
+
+          <textarea>
+            @media only screen and (max-width: 600px) {
+                .main-content {
+                  max-width: 100%;
+                }
+                body {
+                  font-size: 14px;
+                }
+              }
+          </textarea>
+        </code></pre>
+        </div>
+        <!--FIN Código para ventana fragmento con copy-->
+        </li>
+       
+        <li>
+            Además de los ajustes de ancho y tamaño de fuente, se pueden agregar otros estilos para mejorar la
+            experiencia de usuario en pantallas más pequeñas, como ocultar elementos no esenciales, reorganizar el
+            contenido y ajustar el espaciado.
+        </li>
+    </ul>
+        <ul>
+            <p style="text-align: center; font-size: large;">
+                Algunas sugerencias para mejorar la experiencia de usuario en pantallas más pequeñas:
+            </p>
+            <li>Ocultar elementos no esenciales: Utilice la regla CSS <code>display: none</code> para ocultar elementos
+                que no sean necesarios en pantallas más pequeñas. Por ejemplo, se puede ocultar un menú de navegación
+                secundario o una barra lateral en pantallas más pequeñas.
+                <!--INICIO Código para ventana fragmento con copy-->
+            <div id="code-window">
+                <div id="code-header">
+                    <span>Code CSS</span>
+                    <button id="copy-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="none" d="M0 0h24v24H0z" />
+                            <path
+                                d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+                        </svg>
+                        <span>Copy Code</span>
+                    </button>
+                </div>
+                <pre><code id="code-input" class="language-css">
+
+          <textarea>
+            @media only screen and (max-width: 600px) {
+                .secondary-nav {
+                  display: none;
+                }
+              }
+          </textarea>
+        </code></pre>
+            </div>
+            <!--FIN Código para ventana fragmento con copy-->
+            </li>
+
+            
+            <li>Reorganizar el contenido: Utilice las reglas CSS de flexbox o grid para reorganizar el contenido en un
+                formato más apropiado para pantallas más pequeñas. Por ejemplo, se puede cambiar de una disposición de
+                dos columnas a una disposición de una columna.</li>
+            
+            <li>Ajustar el espaciado: Utilice las reglas CSS para ajustar el espaciado en pantallas más pequeñas. Por
+                ejemplo, se puede reducir el margen de los elementos o aumentar el padding de los elementos para mejorar
+                la legibilidad.
+                <!--INICIO Código para ventana fragmento con copy-->
+            <div id="code-window">
+                <div id="code-header">
+                    <span>Code CSS</span>
+                    <button id="copy-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="none" d="M0 0h24v24H0z" />
+                            <path
+                                d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+                        </svg>
+                        <span>Copy Code</span>
+                    </button>
+                </div>
+                <pre><code id="code-input" class="language-css">
+
+          <textarea>
+            @media only screen and (max-width: 600px) {
+                .main-content {
+                  display: flex;
+                  flex-direction: column;
+                }
+              }
+          </textarea>
+        </code></pre>
+            </div>
+            <!--FIN Código para ventana fragmento con copy-->
+            </li>
+            <!--INICIO Código para ventana fragmento con copy-->
+            <div id="code-window">
+                <div id="code-header">
+                    <span>Code CSS</span>
+                    <button id="copy-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="none" d="M0 0h24v24H0z" />
+                            <path
+                                d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+                        </svg>
+                        <span>Copy Code</span>
+                    </button>
+                </div>
+                <pre><code id="code-input" class="language-css">
+
+          <textarea>
+            @media only screen and (max-width: 600px) {
+                .main-content {
+                  margin: 20px 0;
+                }
+                .card {
+                  padding: 10px;
+                }
+              }
+          </textarea>
+        </code></pre>
+            </div>
+            <!--FIN Código para ventana fragmento con copy-->
+            <li>
+                Puedes utilizar media queries en CSS para limitar el tamaño de la ventana y
+                ajustar el encabezado al mismo tamaño en pantallas más pequeñas.
+            <p>Sería algo así:</p>
+            <!--INICIO Código para ventana fragmento con copy-->
+            <div id="code-window">
+                <div id="code-header">
+                    <span>Code CSS</span>
+                    <button id="copy-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="none" d="M0 0h24v24H0z" />
+                            <path
+                                d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+                        </svg>
+                        <span>Copy Code</span>
+                    </button>
+                </div>
+                <pre><code id="code-input" class="language-css">
+
+          <textarea>
+            @media screen and (max-width: 600px) {
+                .code-window {
+                  max-width: none;
+                  width: auto;
+                }
+                .code-header {
+                  width: auto;
+                }
+              }
+          </textarea>
+        </code></pre>
+            </div>
+        </li>
+            <!--FIN Código para ventana fragmento con copy-->
+            <li>Puedes utilizar CSS para ajustar el tamaño de la ventana de fragmento de código al contenido de texto
+                sin formato. Una forma de hacerlo es establecer un ancho máximo en porcentaje y una altura máxima en
+                pixels para la ventana, y hacer que se ajuste automáticamente a la cantidad de contenido:
+
+            <!--INICIO Código para ventana fragmento con copy-->
+            <div id="code-window">
+                <div id="code-header">
+                    <span>Code CSS</span>
+                    <button id="copy-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="none" d="M0 0h24v24H0z" />
+                            <path
+                                d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+                        </svg>
+                        <span>Copy Code</span>
+                    </button>
+                </div>
+                <pre><code id="code-input" class="language-css">
+
+          <textarea>
+            .code-window {
+                max-width: 80%;
+                max-height: 500px;
+                overflow: auto;
+              }
+          </textarea>
+        </code></pre>
+            </div>
+            <!--FIN Código para ventana fragmento con copy-->
+            <p>El código anterior establece un ancho máximo del 80% y una altura máxima de 500 píxeles para la ventana
+                de fragmento de código. La propiedad <code>overflow</code> con el valor <code>auto</code> permite que la
+                ventana se ajuste automáticamente a la cantidad de contenido y muestre barras de desplazamiento cuando
+                sea necesario.</p>
+            </li>
+            <li>Puedes centrar la ventana con respecto al ancho de la sección utilizando el valor
+                <code>margin: 0 auto</code> en CSS:
+            
+
+
+            <!--INICIO Código para ventana fragmento con copy-->
+            <div id="code-window">
+                <div id="code-header">
+                    <span>Code CSS</span>
+                    <button id="copy-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="none" d="M0 0h24v24H0z" />
+                            <path
+                                d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+                        </svg>
+                        <span>Copy Code</span>
+                    </button>
+                </div>
+                <pre><code id="code-input" class="language-css">
+
+          <textarea>
+            .code-window {
+                max-width: 80%;
+                max-height: 500px;
+                overflow: auto;
+                margin: 50px auto;
+              }
+          </textarea>
+        </code></pre>
+            </div>
+            <!--FIN Código para ventana fragmento con copy-->
+            <p>El código anterior centrará la ventana en la sección y además agrega un margen de 50 píxeles en la parte
+                superior e inferior. También puedes utilizar el valor <code>text-align: center</code> en el contenedor
+                que contiene la ventana para centrarla horizontalmente:</p>
+
+            </li>
+
+
+
+            <!--INICIO Código para ventana fragmento con copy-->
+            <div id="code-window">
+                <div id="code-header">
+                    <span>Code CSS</span>
+                    <button id="copy-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="none" d="M0 0h24v24H0z" />
+                            <path
+                                d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+                        </svg>
+                        <span>Copy Code</span>
+                    </button>
+                </div>
+                <pre><code id="code-input" class="language-css">
+
+          <textarea>
+            .container {
+                text-align: center;
+              }
+          </textarea>
+        </code></pre>
+            </div>
+            <!--FIN Código para ventana fragmento con copy-->
+            <li>Puedes colocar estas clases en los elementos HTML correspondientes mediante la adición de la propiedad
+                <code>class</code>:
+            <!--INICIO Código para ventana fragmento con copy-->
+            <div id="code-window">
+                <div id="code-header">
+                    <span>Code HTML</span>
+                    <button id="copy-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="none" d="M0 0h24v24H0z" />
+                            <path
+                                d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+                        </svg>
+                        <span>Copy Code</span>
+                    </button>
+                </div>
+                <pre><code id="code-input" class="language-html">
+
+          <textarea>
+            <div class="container">
+                <div class="code-window">
+                  <!-- Contenido de la ventana de fragmento de código aquí -->
+                </div>
+              </div>
+          </textarea>
+        </code></pre>
+            </div>
+            <!--FIN Código para ventana fragmento con copy-->
+            <p>El código anterior agrega las clases <code>container</code> y <code>code-window</code> a los elementos
+                <code>div</code> correspondientes en HTML.</p>
+            </li>
+            <li>Puedes ajustar el encabezado en la parte superior derecha de la ventana de fragmento de código usando la
+                propiedad <code>position</code> en CSS:
+            <!--INICIO Código para ventana fragmento con copy-->
+            <div id="code-window">
+                <div id="code-header">
+                    <span>Code HTML</span>
+                    <button id="copy-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="none" d="M0 0h24v24H0z" />
+                            <path
+                                d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+                        </svg>
+                        <span>Copy Code</span>
+                    </button>
+                </div>
+                <pre><code id="code-input" class="language-html">
+
+          <textarea>
+            <div class="container">
+                <div class="code-window">
+                  <!-- Contenido de la ventana de fragmento de código aquí -->
+                </div>
+              </div>
+          </textarea>
+        </code></pre>
+            </div>
+            <!--FIN Código para ventana fragmento con copy-->
+        </li>
+        <li>Este código  coloca la clase <code>header</code> en una posición absoluta en la parte superior
+            derecha de la ventana de fragmento de código mediante la propiedad <code>top</code> y
+            <code>right</code>. Además, usa la propiedad <code>display: flex</code> y
+            <code>align-items: center</code> para alinear el icono y el texto en el centro del encabezado. Puedes
+            ajustar el tamaño y la posición de la imagen SVG mediante las propiedades <code>height</code> y
+            <code>width</code>.</li>
+            <!--INICIO Código para ventana fragmento con copy-->
+            <div id="code-window">
+                <div id="code-header">
+                    <span>Code CSS</span>
+                    <button id="copy-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="none" d="M0 0h24v24H0z" />
+                            <path
+                                d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+                        </svg>
+                        <span>Copy Code</span>
+                    </button>
+                </div>
+                <pre><code id="code-input" class="language-css">
+
+          <textarea>
+            .code-window {
+                position: relative;
+                max-width: 80%;
+                max-height: 500px;
+                overflow: auto;
+                margin: 50px auto;
+              }
+              
+              .header {
+                position: absolute;
+                top: 0;
+                right: 0;
+                display: flex;
+                align-items: center;
+                padding: 10px;
+              }
+              
+              .header svg {
+                height: 20px;
+                width: 20px;
+                margin-right: 10px;
+              }
+          </textarea>
+        </code></pre>
+            </div>
+            <!--FIN Código para ventana fragmento con copy-->
+            
+            <li>
+                En HTML, puedes agregar el encabezado de la siguiente manera:
+            
+            <!--INICIO Código para ventana fragmento con copy-->
+            <div id="code-window">
+                <div id="code-header">
+                    <span>Code HTML</span>
+                    <button id="copy-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="none" d="M0 0h24v24H0z" />
+                            <path
+                                d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+                        </svg>
+                        <span>Copy Code</span>
+                    </button>
+                </div>
+                <pre><code id="code-input" class="language-html">
+
+          <textarea>
+            <div class="code-window">
+                <div class="header">
+                  <svg viewBox="0 0 20 20">
+                    <!-- Contenido del icono aquí -->
+                  </svg>
+                  Copiar código
+                </div>
+                <!-- Contenido de la ventana de fragmento de código aquí -->
+              </div>
+          </textarea>
+        </code></pre>
+            </div>
+            <!--FIN Código para ventana fragmento con copy-->
+            <p>
+                Puedes dar estilos al body en el archivo CSS usando la siguiente sintaxis:
+            </p>
+            <!--INICIO Código para ventana fragmento con copy-->
+            <div id="code-window">
+                <div id="code-header">
+                    <span>Code CSS</span>
+                    <button id="copy-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="none" d="M0 0h24v24H0z" />
+                            <path
+                                d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+                        </svg>
+                        <span>Copy Code</span>
+                    </button>
+                </div>
+                <pre><code id="code-input" class="language-css">
+
+          <textarea>
+            body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+              }
+              
+              @media (max-width: 600px) {
+                body {
+                  width: auto;
+                  height: auto;
+                }
+              }
+          </textarea>
+        </code></pre>
+            </div>
+            <!--FIN Código para ventana fragmento con copy-->
+            <p>En este ejemplo, el body tendrá un ancho y un alto del 100% de la pantalla de escritorio. Sin embargo, en
+                pantallas más pequeñas (con un ancho máximo de 600px), los valores de ancho y alto serán automáticos.
+            </p>
+        </li>
+           
+
+        </ul>
+
+
+    </main>
+</body>
+
+</html>

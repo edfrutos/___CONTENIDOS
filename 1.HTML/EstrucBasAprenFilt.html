@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructura página web sobre  aprendizaje de HTML, CSS y JavaScript</title>
+    <!--<link rel="stylesheet" type="text/css" href="estilos.css">-->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+          }
+          
+          header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+          }
+          
+          nav {
+            background-color: #ccc;
+            padding: 10px;
+            text-align: center;
+          }
+          
+          nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: inline-block;
+          }
+          
+          nav li {
+            display: inline-block;
+            margin-right: 10px;
+          }
+          
+          main {
+            padding: 20px;
+          }
+          
+          section {
+            padding: 20px;
+          }
+          
+          aside {
+            background-color: #eee;
+            padding: 10px;
+          }
+          
+          footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+          }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Aprende HTML, CSS y JavaScript</h1>
+      </header>
+      <nav>
+        <ul>
+          <li><a href="#cursos">Cursos</a></li>
+          <li><a href="#manuales">Manuales</a></li>
+          <li><a href="#tutoriales">Tutoriales</a></li>
+        </ul>
+      </nav>
+      <main>
+        <section id="filtro-seccion">
+          <h2>Filtrar por:</h2>
+          <select id="filtro">
+            <option value="todos">Todos</option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript">JavaScript</option>
+          </select>
+          <button id="boton-filtro">Filtrar</button>
+        </section>
+        <section id="contenido">
+          <h2>Cursos</h2>
+          <div class="contenido-seccion cursos">
+            <!-- Aquí se incluirán los cursos disponibles -->
+          </div>
+          <h2>Manuales</h2>
+          <div class="contenido-seccion manuales">
+            <!-- Aquí se incluirán los manuales disponibles -->
+          </div>
+          <h2>Tutoriales</h2>
+          <div class="contenido-seccion tutoriales">
+            <!-- Aquí se incluirán los tutoriales disponibles -->
+          </div>
+        </section>
+      </main>
+      <aside>
+        <h2>Recursos adicionales</h2>
+        <p>Aquí se incluirán enlaces a recursos adicionales para aprender HTML, CSS y JavaScript.</p>
+      </aside>
+      <footer>
+        <p>&copy; 2023 - EDF Aprende HTML, CSS y JavaScript</p>
+      </footer>
+      <!--<script src="script.js"></script>-->
+      <script>
+       // Función que filtra el contenido en base a la selección del usuario
+function filtrarContenido() {
+    // Obtener la selección del usuario
+    var filtro = document.getElementById("filtro").value;
+    // Obtener el contenedor de todo el contenido
+    var contenido = document.getElementById("contenido");
+    // Ocultar todo el contenido
+    contenido.style.display = "none";
+    // Mostrar solo el contenido que coincida con la selección del usuario
+    if (filtro === "todos") {
+      contenido.style.display = "block";
+    } else {
+      var secciones = contenido.getElementsByClassName(filtro);
+      for (var i = 0; i < secciones.length; i++) {
+        secciones[i].style.display = "block";
+      }
+    }
+  }
+  // Asociar la función al botón de filtro
+  var botonFiltro = document.getElementById("boton-filtro");
+  botonFiltro.addEventListener("click", filtrarContenido);
+      </script>
+    </body>
+</body>
+</html>
