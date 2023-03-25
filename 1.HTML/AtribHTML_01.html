@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atributos HTML</title>
+    <style>
+       
+    </style>
+</head>
+
+<body>
+    <h1>En HTML (Hypertext Markup Language), hay muchos atributos disponibles que se pueden utilizar para dar formato y
+        funcionalidad a los elementos.</h1>
+    <ol>
+        <p>Aquí hay una lista de algunos de los atributos más comunes:</p>
+
+        <li><code><strong>id</strong></code>: especifica un identificador único para un elemento</li>
+        <li><code><strong>class</strong></code>: especifica una o más clases CSS para un elemento</li>
+        <li><code><strong>style</strong></code>: especifica un estilo CSS para un elemento</li>
+        <li><code><strong>title</strong></code>: especifica información adicional sobre un elemento (se muestra como una
+            "herramienta de
+            información" al pasar el cursor sobre el elemento)</li>
+        <li><code><strong>href</strong></code>: especifica la URL de destino de un enlace</li>
+        <li><code><strong>src</strong></code>: especifica la URL de origen de un elemento incrustado, como una imagen o
+            un video</li>
+        <li><code><strong>alt</strong></code>: proporciona una descripción alternativa de una imagen, que se mostrará si
+            la imagen no se
+            puede cargar</li>
+        <li><code><strong>width</strong></code>: especifica el ancho de un elemento, como una imagen o un video</li>
+        <li><code><strong>height</strong></code>: especifica la altura de un elemento, como una imagen o un video</li>
+        <li><code><strong>disabled</strong></code>: indica que un elemento está desactivado</li>
+        <li><code><strong>readonly</strong></code>: indica que un elemento es solo para lectura</li>
+        <li><code><strong>required</strong></code>: indica que un elemento es obligatorio</li>
+        <li><code><strong>placeholder</strong></code>: proporciona un texto de marcador de posición para un elemento de
+            entrada</li>
+        <li><code><strong>autocomplete</strong></code>: especifica si el autocompletado está habilitado o deshabilitado
+            para un elemento
+            de entrada</li>
+        <li><code><strong>selected</strong></code>: indica que un elemento seleccionable (como una opción de lista
+            desplegable) está
+            seleccionado</li>
+        <li><code><strong>target</strong></code>: especifica en qué ventana o marco abrir el destino de un enlace</li>
+        <li><code><strong>rel</strong></code>: especifica la relación entre la página actual y el destino de un enlace
+            (por ejemplo, si
+            el enlace es un enlace de navegación o un enlace de referencia)</li>
+        <li><code><strong>type</strong></code>: especifica el tipo de elemento, como el tipo de contenido de un script o
+            el tipo de
+            entrada en un elemento <code>input</strong></code></li>
+        <li><code><strong>name</strong></code>: especifica un nombre para un elemento, como el nombre de un campo de
+            entrada en un
+            formulario</li>
+        <li><code><strong>value</strong></code>: especifica el valor de un elemento, como el valor de un campo de
+            entrada en un
+            formulario o el valor de una opción de lista desplegable</li>
+        <li><code><strong>maxlength</strong></code>: especifica la longitud máxima permitida para un campo de entrada en
+            un formulario
+        </li>
+        <li><code><strong>min</strong></code> y <code>max</strong></code>: especifican los valores mínimo y máximo
+            permitidos para un campo de
+            entrada numérico en un formulario</li>
+        <li><code><strong>step</strong></code>: especifica los incrementos en los que se permiten los valores en un
+            campo de entrada
+            numérico</li>
+        <li><code><strong>checked</strong></code>: indica que un elemento de entrada está seleccionado (como una casilla
+            de verificación
+            o un botón de opción)</li>
+        <li><code><strong>multiple</strong></code>: indica que se pueden seleccionar varios elementos en un elemento de
+            entrada de
+            selección múltiple</li>
+        <li><code><strong>rows</strong></code> y <code>cols</strong></code>: especifican el número de filas y columnas
+            para un elemento
+            <code>textarea</strong></code>
+        </li>
+        <li><code><strong>charset</strong></code>: especifica el conjunto de caracteres utilizado por el documento HTML
+        </li>
+        <li><code><strong>lang</strong></code>: especifica el idioma principal utilizado en el documento HTML</li>
+        <li><code><strong>dir</strong></code>: especifica la dirección del texto en el documento HTML (de izquierda a
+            derecha o de
+            derecha a izquierda)</li>
+        <li><code><strong>accesskey</strong></code>: especifica una tecla de acceso rápido para un elemento (por
+            ejemplo, una letra
+            subrayada en un menú que puede activarse presionando la tecla Alt y la letra correspondiente)</li>
+        <li><code><strong>tabindex</strong></code>: especifica el orden en que se enfocan los elementos de la página
+            cuando se presiona
+            la tecla Tab</li>
+        <li><code><strong>contenteditable</strong></code>: indica si un elemento es editable por el usuario</li>
+        <li><code><strong>spellcheck</strong></code>: indica si la ortografía del texto de un elemento se verifica
+            automáticamente</li>
+        <li><code><strong>hidden</strong></code>: oculta un elemento de la página</li>
+        <li><code><strong>download</strong></code>: indica que un enlace debe descargar el recurso vinculado en lugar de
+            navegar a él
+        </li>
+        <li><code><strong>media</strong></code>: especifica el tipo de dispositivo para el cual se aplica una regla de
+            estilo</li>
+        <li><code><strong>scoped</strong></code>: indica que una regla de estilo se aplica solo a los elementos
+            secundarios del elemento
+            <code>scoped</strong></code> en el que se encuentra la regla
+        </li>
+        <li><code><strong>async</strong></code> y <code>defer</strong></code>: indican que un script debe cargarse de
+            forma asíncrona (sin
+            bloquear la carga de la página) o de forma diferida (después de que se haya cargado la página),
+            respectivamente.</li>
+        <li><code><strong>accesskey</strong></code>: especifica una tecla de acceso rápido para un elemento.</li>
+        <li><code><strong>alt</strong></code>: proporciona una descripción alternativa de una imagen, que se mostrará si
+            la imagen no se
+            puede cargar.</li>
+        <li><code><strong>altimg</strong></code>: indica una imagen alternativa para mostrar si la imagen original no se
+            puede cargar.
+        </li>
+        <li><code><strong>async</strong></code>: indica que un script debe cargarse de forma asíncrona (sin bloquear la
+            carga de la
+            página).</li>
+        <li><code><strong>autocomplete</strong></code>: especifica si el autocompletado está habilitado o deshabilitado
+            para un elemento
+            de entrada.</li>
+        <li><code><strong>autocorrect</strong></code>: indica si la corrección automática está habilitada o
+            deshabilitada para un
+            elemento de entrada.</li>
+        <li><code><strong>autofocus</strong></code>: indica que un elemento de entrada debe recibir el enfoque
+            automáticamente cuando se
+            carga la página.</li>
+        <li><code><strong>autoplay</strong></code>: indica que un elemento de audio o video debe reproducirse
+            automáticamente cuando se
+            carga la página.</li>
+        <li><code><strong>axis</strong></code>: indica la categoría de encabezado de una celda en una tabla.</li>
+        <li><code><strong>allow</strong></code>: especifica una lista de orígenes que se les permite acceder a recursos
+            protegidos por
+            una política de seguridad de contenido.</li>
+        <li><code><strong>allowfullscreen</strong></code>: indica si se permite el modo de pantalla completa para un
+            elemento de video o
+            iframe.</li>
+        <li><code><strong>allowpaymentrequest</strong></code>: indica si se permite la solicitud de pago para un
+            elemento de formulario.
+        </li>
+        <li><code><strong>background</strong></code>: especifica una imagen de fondo para un elemento.</li>
+        <li><code><strong>bgcolor</strong></code>: especifica el color de fondo de un elemento.</li>
+        <li><code><strong>border</strong></code>: especifica el ancho del borde de un elemento.</li>
+        <li><code><strong>buffered</strong></code>: indica qué porción de un elemento de audio o video ya se ha
+            descargado.</li>
+        <li><code><strong>capture</strong></code>: especifica si se debe capturar una imagen o video usando una cámara o
+            micrófono.</li>
+        <li><code><strong>challenge</strong></code>: proporciona una pregunta o desafío que el usuario debe responder
+            para enviar un
+            formulario.</li>
+        <li><code><strong>charset</strong></code>: especifica el conjunto de caracteres utilizado por el documento HTML.
+        </li>
+        <li><code><strong>checked</strong></code>: indica que un elemento de entrada está seleccionado (como una casilla
+            de verificación
+            o un botón de opción).</li>
+        <li><code><strong>cite</strong></code>: especifica la fuente de una cita o referencia.</li>
+        <li><code><strong>class</strong></code>: especifica una o más clases CSS para un elemento.</li>
+        <li><code><strong>classid</strong></code>: especifica el identificador de clase de un objeto de control ActiveX.
+        </li>
+        <li><code><strong>code</strong></code>: especifica un código de respuesta HTTP para una respuesta de servidor.
+        </li>
+        <li><code><strong>codebase</strong></code>: especifica la ubicación de un archivo JAR o directorio de clases.
+        </li>
+        <li><code><strong>codetype</strong></code>: especifica el tipo MIME de un archivo de código.</li>
+        <li><code><strong>color</strong></code>: especifica el color del texto de un elemento.</li>
+        <li><code><strong>cols</strong></code>: especifica el número de columnas para un elemento
+            <code>textarea</strong></code>.</li>
+        <li><code><strong>colspan</strong></code>: especifica el número de columnas que debe abarcar una celda en una
+            tabla.</li>
+        <li><code><strong>compact</strong></code>: indica que los elementos de una lista deben tener un margen reducido
+            entre ellos.</li>
+        <li><code><strong>content</strong></code>: especifica el valor de contenido de un elemento
+            <code>meta</strong></code>.</li>
+        <li><code><strong>contenteditable</strong></code>: indica si un elemento es editable por el usuario.</li>
+        <li><code><strong>contextmenu</strong></code>: especifica el menú contextual que se mostrará cuando se hace clic
+            con el botón
+            derecho en un elemento.</li>
+        <li><code><strong>controls</strong></code>: indica si se deben mostrar los controles de reproducción para un
+            elemento de audio o
+            video.</li>
+        <li><code><strong>coords</strong></code>: especifica las coordenadas de un área de mapa en una</li>
+        <li><code><strong>crossorigin</strong></code>: indica si se deben enviar credenciales de origen cruzado al
+            solicitar un recurso.
+        </li>
+        <li><code><strong>data</strong></code>: especifica los datos para un objeto.</li>
+        <li><code><strong>datetime</strong></code>: especifica una fecha y hora en formato ISO 8601.</li>
+        <li><code><strong>declare</strong></code>: indica que un objeto no se utilizará de inmediato, pero que debe
+            estar disponible para
+            scripts.</li>
+        <li><code><strong>decoding</strong></code>: indica cómo se debe decodificar un archivo de imagen.</li>
+        <li><code><strong>default</strong></code>: indica que una pista de subtítulos o audio es la predeterminada.</li>
+        <li><code><strong>defer</strong></code>: indica que un script debe cargarse de forma diferida (después de que se
+            haya cargado la
+            página).</li>
+        <li><code><strong>dir</strong></code>: especifica la dirección del texto en el documento HTML (de izquierda a
+            derecha o de
+            derecha a izquierda).</li>
+        <li><code><strong>dirname</strong></code>: indica la dirección de escritura de un elemento de entrada.</li>
+        <li><code><strong>disabled</strong></code>: indica que un elemento está desactivado y no se puede interactuar
+            con él.</li>
+        <li><code><strong>download</strong></code>: indica que un enlace debe descargar el recurso vinculado en lugar de
+            navegar a él.
+        </li>
+        <li><code><strong>draggable</strong></code>: indica si un elemento es arrastrable por el usuario.</li>
+        <li><code><strong>dropzone</strong></code>: especifica las zonas donde se pueden soltar elementos arrastrables.
+        </li>
+        <li><code><strong>enctype</strong></code>: especifica el tipo de codificación de caracteres que se utiliza para
+            enviar los datos
+            de un formulario.</li>
+        <li><code><strong>for</strong></code>: especifica el elemento de formulario al que se hace referencia un
+            elemento de etiqueta.
+        </li>
+        <li><code><strong>form</strong></code>: especifica el formulario al que pertenece un elemento.</li>
+        <li><code><strong>formaction</strong></code>: especifica la URL a la que se enviarán los datos de un formulario
+            cuando se envíe.
+        </li>
+        <li><code><strong>headers</strong></code>: especifica los encabezados de tabla asociados con una celda en una
+            tabla.</li>
+        <li><code><strong>height</strong></code>: especifica la altura de un elemento.</li>
+        <li><code><strong>hidden</strong></code>: oculta un elemento de la página.</li>
+        <li><code><strong>high</strong></code>: especifica el valor máximo para un elemento de entrada numérico.</li>
+        <li><code><strong>href</strong></code>: especifica la dirección URL a la que se vincula un enlace o la ubicación
+            de un recurso.
+        </li>
+        <li><code><strong>hreflang</strong></code>: especifica el idioma del recurso vinculado en un enlace.</li>
+        <li><code><strong>http-equiv</strong></code>: proporciona información adicional sobre cómo debe procesarse el
+            contenido de una
+            página.</li>
+        <li><code><strong>icon</strong></code>: especifica la ubicación de un icono para un sitio web.</li>
+        <li><code><strong>id</strong></code>: especifica un identificador único para un elemento.</li>
+        <li><code><strong>inputmode</strong></code>: especifica el tipo de entrada de teclado que se espera para un
+            elemento de entrada.
+        </li>
+        <li><code><strong>integrity</strong></code>: especifica la integridad de un recurso, utilizando una suma de
+            comprobación
+            criptográfica.</li>
+        <li><code><strong>ismap</strong></code>: indica si un elemento de imagen debe actuar como un mapa de imagen.
+        </li>
+        <li><code><strong>itemprop</strong></code>: especifica una propiedad de esquema que se asocia con un elemento
+            HTML.</li>
+        <li><code><strong>keytype</strong></code>: especifica el tipo de clave para un elemento
+            <code>keygen</strong></code>.</li>
+        <li><code><strong>kind</strong></code>: especifica el tipo de pista de subtítulos o audio.</li>
+        <li><code><strong>label</strong></code>: especifica una etiqueta legible por humanos para un elemento de
+            entrada.</li>
+        <li><code><strong>lang</strong></code>: especifica el idioma principal utilizado en el documento HTML.</li>
+        <li><code><strong>language</strong></code>: indica el lenguaje utilizado para scripts embebidos.</li>
+        <li><code><strong>list</strong></code>: indica el elemento <code>datalist</strong></code> que se asocia con un
+            elemento de entrada.</li>
+        <li><code><strong>loading</strong></code>: indica cómo se debe cargar un recurso.</li>
+        <li><code><strong>longdesc</strong></code>: especifica la ubicación de una descripción larga de un elemento.
+        </li>
+        <li>`</li>
+        <li><code><strong>low</strong></code>: especifica el valor mínimo para un elemento de entrada numérico.</li>
+        <li><code><strong>manifest</strong></code>: especifica la ubicación de un archivo de manifiesto de aplicación
+            web.</li>
+        <li><code><strong>marginheight</strong></code>: especifica el tamaño del margen superior e inferior de un marco.
+        </li>
+        <li><code><strong>marginwidth</strong></code>: especifica el tamaño del margen izquierdo y derecho de un marco.
+        </li>
+        <li><code><strong>max</strong></code>: especifica el valor máximo para un elemento de entrada numérico o fecha.
+        </li>
+        <li><code><strong>maxlength</strong></code>: especifica la longitud máxima de un valor de entrada.</li>
+        <li><code><strong>media</strong></code>: indica la hoja de estilo a la que se aplica un estilo.</li>
+        <li><code><strong>method</strong></code>: especifica el método HTTP utilizado para enviar los datos de un
+            formulario.</li>
+        <li><code><strong>min</strong></code>: especifica el valor mínimo para un elemento de entrada numérico o fecha.
+        </li>
+        <li><code><strong>minlength</strong></code>: especifica la longitud mínima de un valor de entrada.</li>
+        <li><code><strong>multiple</strong></code>: indica si se permiten varias selecciones en un elemento de entrada
+            (como una lista
+            desplegable).</li>
+        <li><code><strong>muted</strong></code>: indica que el sonido está desactivado para un elemento de audio o
+            video.</li>
+        <li><code><strong>name</strong></code>: especifica el nombre de un elemento de entrada.</li>
+        <li><code><strong>novalidate</strong></code>: indica que no se validará un formulario cuando se envíe.</li>
+        <li><code><strong>object</strong></code>: especifica la ubicación de un objeto incorporado.</li>
+        <li><code><strong>onabort</strong></code>: se activa cuando se interrumpe la carga de un objeto.</li>
+        <li><code><strong>onafterprint</strong></code>: se activa después de que se haya impreso una página.</li>
+        <li><code><strong>onbeforeprint</strong></code>: se activa antes de que se imprima una página.</li>
+        <li><code><strong>onbeforeunload</strong></code>: se activa antes de que se descargue una página.</li>
+        <li><code><strong>onblur</strong></code>: se activa cuando un elemento pierde el enfoque.</li>
+        <li><code><strong>oncanplay</strong></code>: se activa cuando se puede reproducir un elemento de audio o video.
+        </li>
+        <li><code><strong>oncanplaythrough</strong></code>: se activa cuando se puede reproducir completamente un
+            elemento de audio o
+            video sin interrupciones.</li>
+        <li><code><strong>onchange</strong></code>: se activa cuando cambia el valor de un elemento de entrada.</li>
+        <li><code><strong>onclick</strong></code>: se activa cuando se hace clic en un elemento.</li>
+        <li><code><strong>oncontextmenu</strong></code>: se activa cuando se hace clic con el botón derecho en un
+            elemento.</li>
+        <li><code><strong>oncopy</strong></code>: se activa cuando se copia un elemento.</li>
+        <li><code><strong>oncuechange</strong></code>: se activa cuando cambian las pistas de subtítulos o audio de un
+            elemento de audio
+            o video.</li>
+        <li><code><strong>oncut</strong></code>: se activa cuando se corta un elemento.</li>
+        <li><code><strong>ondblclick</strong></code>: se activa cuando se hace doble clic en un elemento.</li>
+        <li><code><strong>ondrag</strong></code>: se activa cuando se arrastra un elemento.</li>
+        <li><code><strong>ondragend</strong></code>: se activa cuando se completa un arrastre de un elemento.</li>
+        <li><code><strong>ondragenter</strong></code>: se activa cuando se arrastra un elemento sobre un destino válido.
+        </li>
+        <li><code><strong>ondragleave</strong></code>: se activa cuando se arrastra un elemento fuera de un destino
+            válido.</li>
+        <li><code><strong>ondragover</strong></code>: se activa cuando se arrastra un elemento sobre un destino válido.
+        </li>
+        <li><code><strong>ondragstart</strong></code>: se activa cuando se inicia un arrastre de un elemento.</li>
+        <li><code><strong>ondrop</strong></code>: se activa cuando se suelta un elemento arrastrado en un destino
+            válido.</li>
+        <li><code><strong>ondurationchange</strong></code>: se activa cuando cambia la duración de un elemento de audio
+            o video.</li>
+        <li><code><strong>onemptied</strong></code>: se activa cuando se borra el contenido de un elemento de audio</li>
+        <li><code><strong>onended</strong></code>: se activa cuando un elemento de audio o video ha finalizado la
+            reproducción.</li>
+        <li><code><strong>onerror</strong></code>: se activa cuando se produce un error al cargar un objeto.</li>
+        <li><code><strong>onfocus</strong></code>: se activa cuando un elemento recibe el enfoque.</li>
+        <li><code><strong>onhashchange</strong></code>: se activa cuando cambia la parte del fragmento de la URL.</li>
+        <li><code><strong>oninput</strong></code>: se activa cuando se escribe texto en un elemento de entrada.</li>
+        <li><code><strong>oninvalid</strong></code>: se activa cuando se produce un error de validación en un elemento
+            de entrada.</li>
+        <li><code><strong>onkeydown</strong></code>: se activa cuando se presiona una tecla.</li>
+        <li><code><strong>onkeypress</strong></code>: se activa cuando se mantiene presionada una tecla.</li>
+        <li><code><strong>onkeyup</strong></code>: se activa cuando se suelta una tecla.</li>
+        <li><code><strong>onload</strong></code>: se activa cuando se ha cargado un objeto.</li>
+        <li><code><strong>onloadeddata</strong></code>: se activa cuando se ha cargado suficiente información para
+            reproducir los
+            primeros cuadros de un elemento de audio o video.</li>
+        <li><code><strong>onloadedmetadata</strong></code>: se activa cuando se ha cargado información sobre las
+            dimensiones y duración
+            de un elemento de audio o video.</li>
+        <li><code><strong>onloadstart</strong></code>: se activa cuando se inicia la carga de un objeto.</li>
+        <li><code><strong>onmessage</strong></code>: se activa cuando se recibe un mensaje a través de una ventana o un
+            marco.</li>
+        <li><code><strong>onmousedown</strong></code>: se activa cuando se presiona el botón del mouse en un elemento.
+        </li>
+        <li><code><strong>onmousemove</strong></code>: se activa cuando se mueve el mouse sobre un elemento.</li>
+        <li><code><strong>onmouseout</strong></code>: se activa cuando se mueve el mouse fuera de un elemento.</li>
+        <li><code><strong>onmouseover</strong></code>: se activa cuando se mueve el mouse sobre un elemento.</li>
+        <li><code><strong>onmouseup</strong></code>: se activa cuando se suelta el botón del mouse en un elemento.</li>
+        <li><code><strong>onoffline</strong></code>: se activa cuando se pierde la conexión a Internet.</li>
+        <li><code><strong>ononline</strong></code>: se activa cuando se restablece la conexión a Internet.</li>
+        <li><code><strong>onpagehide</strong></code>: se activa cuando una página está a punto de ocultarse.</li>
+        <li><code><strong>onpageshow</strong></code>: se activa cuando una página se muestra después de haber estado
+            oculta.</li>
+        <li><code><strong>onpaste</strong></code>: se activa cuando se pega texto en un elemento.</li>
+        <li><code><strong>onpause</strong></code>: se activa cuando se pausa un elemento de audio o video.</li>
+        <li><code><strong>onplay</strong></code>: se activa cuando se inicia la reproducción de un elemento de audio o
+            video.</li>
+        <li><code><strong>onplaying</strong></code>: se activa cuando se reanuda la reproducción de un elemento de audio
+            o video que se
+            había detenido por alguna razón.</li>
+        <li><code><strong>onpopstate</strong></code>: se activa cuando se cambia el historial de navegación del
+            navegador.</li>
+        <li><code><strong>onprogress</strong></code>: se activa cuando se descarga un objeto.</li>
+        <li><code><strong>onratechange</strong></code>: se activa cuando cambia la velocidad de reproducción de un
+            elemento de audio o
+            video.</li>
+        <li><code><strong>onreset</strong></code>: se activa cuando se restablece un formulario.</li>
+        <li><code><strong>onresize</strong></code>: se activa cuando se cambia el tamaño de la ventana del navegador.
+        </li>
+        <li><code><strong>onscroll</strong></code>: se activa cuando se desplaza un elemento.</li>
+        <li><code><strong>onsearch</strong></code>: se activa cuando se realiza una búsqueda en un elemento
+            <code>input</strong></code> con el
+            atributo <code>type</strong></code> establecido en "search".</li>
+        <li><code><strong>onseeked</strong></code>: se activa cuando se ha completado un avance o retroceso rápido en un
+            elemento de
+            audio o video.</li>
+        <li><code><strong>onseeking</strong></code>: se activa cuando se está buscando un nuevo punto de reproducción en
+            un elemento de
+            audio o video.</li>
+        <li><code><strong>onselect</strong></code>: se activa cuando se selecciona un elemento de entrada o se
+            selecciona texto.</li>
+        <li><code><strong>onstalled</strong></code>: se activa cuando la descarga de un objeto se detiene temporalmente.
+        </li>
+        <li><code><strong>onstorage</strong></code>: se activa cuando se modifica el almacenamiento web.</li>
+        <li><code><strong>onsubmit</strong></code>: se activa cuando se envía un formulario.</li>
+        <li><code><strong>onsuspend</strong></code>: se activa cuando la descarga de un objeto se detiene por completo.
+        </li>
+        <li><code><strong>ontimeupdate</strong></code>: se activa cuando cambia el tiempo de reproducción de un elemento
+            de audio o
+            video.</li>
+        <li><code><strong>ontoggle</strong></code>: se activa cuando se activa o desactiva un elemento de
+            <code>details</strong></code>.</li>
+        <li><code><strong>onunload</strong></code>: se activa cuando una página está a punto de descargarse.</li>
+        <li><code><strong>onvolumechange</strong></code>: se activa cuando cambia el nivel de volumen de un elemento de
+            audio o video.
+        </li>
+        <li><code><strong>onwaiting</strong></code>: se activa cuando se detiene la reproducción de un elemento de audio
+            o video mientras
+            espera más datos.</li>
+        <li><code><strong>open</strong></code>: indica si un elemento de detalles está abierto o cerrado.</li>
+        <li><code><strong>optimum</strong></code>: especifica el valor óptimo para un elemento de entrada numérico.</li>
+        <li><code><strong>pattern</strong></code>: especifica una expresión regular que debe coincidir con el valor de
+            entrada.</li>
+        <li><code><strong>ping</strong></code>: especifica una lista de direcciones URL para enviar un seguimiento de
+            clics.</li>
+        <li><code><strong>placeholder</strong></code>: especifica un texto de marcador de posición para un elemento de
+            entrada.</li>
+        <li><code><strong>poster</strong></code>: especifica la imagen de portada de un elemento de video.</li>
+        <li><code><strong>preload</strong></code>: indica si se debe cargar un elemento de audio o video cuando se carga
+            la página.</li>
+        <li><code><strong>readonly</strong></code>: indica que un elemento de entrada es de solo lectura y no se puede
+            editar.</li>
+        <li><code><strong>rel</strong></code>: especifica la relación entre el documento actual y el recurso vinculado.
+        </li>
+        <li><code><strong>required</strong></code>: indica que un elemento de entrada es obligatorio y no se puede
+            enviar el formulario
+            sin él.</li>
+        <li><code><strong>reversed</strong></code>: indica que una lista ordenada debe ser mostrada en orden inverso.
+        </li>
+        <li><code><strong>rows</strong></code>: especifica el número de filas en un elemento
+            <code>textarea</strong></code>.</li>
+        <li><code><strong>rowspan</strong></code>: especifica el número de filas que abarca una celda en una tabla.</li>
+        <li><code><strong>sandbox</strong></code>: indica una serie de restricciones de seguridad para un objeto
+            incorporado.</li>
+        <li><code><strong>scope</strong></code>: especifica la relación entre una celda y un encabezado de tabla en una
+            tabla.</li>
+        <li><code><strong>selected</strong></code>: indica que una opción en una lista desplegable debe ser seleccionada
+            de forma
+            predeterminada.</li>
+        <li><code><strong>shape</strong></code>: especifica la forma de un área de mapa en una imagen con mapa de
+            imagen.</li>
+        <li><code><strong>size</strong></code>: especifica el ancho visual de un elemento de entrada.</li>
+        <li><code><strong>sizes</strong></code>: especifica los tamaños de imagen disponibles para un elemento
+            <code>img</strong></code> o
+            <code>source</strong></code>.
+        </li>
+        <li><code><strong>span</strong></code>: especifica el número de columnas que abarca una celda en una tabla o el
+            número de
+            caracteres que debe incluir un elemento de <code>colgroup</strong></code>.</li>
+        <li><code><strong>spellcheck</strong></code>: indica si se debe verificar la ortografía y la gramática del texto
+            en un elemento.
+        </li>
+        <li><code><strong>src</strong></code>: especifica la ubicación del recurso a cargar.</li>
+        <li><code><strong>srcdoc</strong></code>: especifica el contenido HTML que se mostrará en un marco incorporado.
+        </li>
+        <li><code><strong>srclang</strong></code>: especifica el idioma del recurso de subtítulos en un elemento
+            <code>track</strong></code>.</li>
+        <li><code><strong>srcset</strong></code>: especifica los recursos de imagen disponibles para un elemento
+            <code>img</strong></code>.</li>
+        <li><code><strong>start</strong></code>: especifica el número de inicio para una lista ordenada.</li>
+        <li><code><strong>step</strong></code>: especifica el intervalo entre valores para</li>
+        <li><code><strong>style</strong></code>: especifica los estilos CSS para un elemento.</li>
+        <li><code><strong>summary</strong></code>: especifica una descripción de la tabla en una tabla con detalles.
+        </li>
+        <li><code><strong>tabindex</strong></code>: especifica el orden de tabulación de un elemento.</li>
+        <li><code><strong>target</strong></code>: especifica el destino de navegación para un enlace o un formulario.
+        </li>
+        <li><code><strong>title</strong></code>: especifica información sobre un elemento cuando se desplaza sobre él o
+            se enfoca en él.
+        </li>
+        <li><code><strong>translate</strong></code>: indica si el contenido de un elemento debe traducirse o no.</li>
+        <li><code><strong>type</strong></code>: especifica el tipo de elemento de entrada o el tipo de medio de un
+            elemento de audio o
+            video.</li>
+        <li><code><strong>usemap</strong></code>: especifica el mapa de imagen al que está vinculado un elemento
+            <code>img</strong></code>.</li>
+        <li><code><strong>value</strong></code>: especifica el valor de un elemento de entrada.</li>
+        <li><code><strong>width</strong></code>: especifica el ancho visual de un elemento.</li>
+        <li><code><strong>wrap</strong></code>: especifica cómo se deben manejar los saltos de línea en un elemento
+            <code>textarea</strong></code>.
+        </li>
+    </ol>
+</body>
+
+</html>

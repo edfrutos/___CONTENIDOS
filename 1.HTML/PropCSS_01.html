@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atributos CSS</title>
+    <style>
+         .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(auto-fill, minmax(130px, 1fr));
+            grid-gap: 10px;
+            list-style: none;
+            margin: 50px;
+            padding: 0;
+            height: 100vh;
+            /* Establece la altura del grid en 100% del alto de la pantalla */
+            overflow-y: scroll;
+            /* Agrega scroll vertical al grid si el contenido supera la altura de la pantalla */
+        }
+
+        li {
+            background-color: #f5f5f5;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Ajusta el número de columnas en función del ancho de la pantalla */
+        @media screen and (min-width: 768px) {
+            .grid {
+                height: 80vh;
+                /* Establece la altura del grid en 80% del alto de la pantalla para pantallas más grandes */
+            }
+        }
+
+        /* Para pantallas más pequeñas, ajusta el número de columnas a 2 */
+        @media screen and (max-width: 767px) {
+            .grid {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
+                grid-gap: 10px;
+                list-style: none;
+                margin: 50px;
+                padding: 0;
+                height: 100vh;
+                /* Establece la altura del grid en 100% del alto de la pantalla */
+                overflow-y: scroll;
+                /* Agrega scroll vertical al grid si el contenido supera la altura de la pantalla */
+            }
+        }
+
+        .property-item {
+            background-color: rgba(255, 255, 255, 0.8);
+            color: #000;
+            padding: 20px;
+            border-radius: 4px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .property-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <ul class="grid">
+<li class="property-item searchable"><strong>align-content: </strong></strong>Establece la alineación vertical del contenido de un contenedor flexible cuando hay espacio disponible en el eje transversal.</li>
+<li class="property-item searchable"><strong>align-items: </strong></strong>Establece la alineación vertical de los elementos dentro de un contenedor flexible.</li>
+<li class="property-item searchable"><strong>align-self: </strong></strong>Establece la alineación vertical de un elemento en relación con su contenedor flexible.</li>
+<li class="property-item searchable"><strong>all: </strong>Establece todas las propiedades CSS a sus valores iniciales o heredados.</li>
+<li class="property-item searchable"><strong>animation: </strong>Una propiedad abreviada para establecer varias propiedades de animación a la vez.</li>
+<li class="property-item searchable"><strong>animation-delay: </strong>Establece un retraso antes de que comience una animación.</li>
+<li class="property-item searchable"><strong>animation-direction: </strong>Establece si una animación debe reproducirse hacia adelante, hacia atrás o en ambas direcciones.</li>
+<li class="property-item searchable"><strong>animation-duration: </strong>Establece la duración de una animación.</li>
+<li class="property-item searchable"><strong>animation-fill-mode: </strong>Establece qué valores deben aplicarse a un elemento antes y después de una animación.</li>
+<li class="property-item searchable"><strong>animation-iteration-count: </strong>Establece el número de veces que se debe reproducir una animación.</li>
+<li class="property-item searchable"><strong>animation-name: </strong>Establece el nombre de una animación definida por el usuario.</li>
+<li class="property-item searchable"><strong>animation-play-state: </strong>Establece si una animación está en pausa o en reproducción.</li>
+<li class="property-item searchable"><strong>animation-timing-function: </strong>Establece la curva de tiempo de una animación.</li>
+<li class="property-item searchable"><strong>backface-visibility: </strong>Especifica si el reverso de un elemento debe ser visible cuando se gira.</li>
+<li class="property-item searchable"><strong>background: </strong>Una propiedad abreviada para establecer varias propiedades de fondo a la vez.</li>
+<li class="property-item searchable"><strong>background-attachment: </strong>Establece si la imagen de fondo de un elemento debe desplazarse con el contenido del elemento o permanecer fija.</li>
+<li class="property-item searchable"><strong>background-blend-mode: </strong>Especifica cómo se mezclará el fondo de un elemento con su contenido.</li>
+<li class="property-item searchable"><strong>background-color: </strong>Establece el color de fondo de un elemento.</li>
+<li class="property-item searchable"><strong>background-image: </strong>Establece una imagen como fondo de un elemento.</li>
+<li class="property-item searchable"><strong>background-position: </strong>Establece la posición de la imagen de fondo dentro del elemento.</li>
+<li class="property-item searchable"><strong>background-repeat: </strong>Establece si la imagen de fondo debe repetirse o no.</li>
+<li class="property-item searchable"><strong>background-size: </strong>Establece el tamaño de la imagen de fondo.</li>
+<li class="property-item searchable"><strong>border: </strong>Una propiedad abreviada para establecer varias propiedades de borde a la vez.</li>
+<li class="property-item searchable"><strong>border-bottom: </strong>Una propiedad abreviada para establecer varias propiedades del borde inferior a la vez.</li>
+<li class="property-item searchable"><strong>border-bottom-color: </strong>Establece el color del borde inferior de un elemento.</li>
+<li class="property-item searchable"><strong>border-bottom-style: </strong>Establece el estilo del borde inferior de un elemento.</li>
+<li class="property-item searchable"><strong>border-bottom-width: </strong>Establece el ancho del borde inferior de un elemento.</li>
+<li class="property-item searchable"><strong>border-collapse: </strong>Especifica si los bordes de las celdas de una tabla deben unirse o separarse.</li>
+<li class="property-item searchable"><strong>border-color: </strong>Establece el color de los cuatro bordes de un elemento.</li>
+<li class="property-item searchable"><strong>border-left: </strong>Una propiedad abreviada para establecer varias propiedades del borde izquierdo a la vez.</li>
+<li class="property-item searchable"><strong>border-left-color: </strong>Establece el color del borde izquierdo de un elemento.</li>
+<li class="property-item searchable"><strong>border-left-style: </strong>Establece el estilo del borde izquierdo de un elemento.</li>
+<li class="property-item searchable"><strong>border-left-width: </strong>Establece el ancho del borde izquierdo de un elemento.</li>
+<li class="property-item searchable"><strong>border-radius: </strong>Establece el radio de los bordes de un elemento.</li>
+<li class="property-item searchable"><strong>border-right: </strong>Una propiedad abreviada para establecer varias propiedades del borde derecho a la vez.</li>
+<li class="property-item searchable"><strong>border-right-color: </strong>Establece el color del borde derecho de un elemento.</li>
+<li class="property-item searchable"><strong>border-right-style: </strong>Establece el estilo del borde derecho de un elemento.</li>
+<li class="property-item searchable"><strong>border-right-width: </strong>Establece el ancho del borde derecho de un elemento.</li>
+<li class="property-item searchable"><strong>border-spacing: </strong>Establece el espacio entre las celdas de una tabla.</li>
+<li class="property-item searchable"><strong>border-style: </strong>Establece el estilo de los cuatro bordes de un elemento.</li>
+<li class="property-item searchable"><strong>border-top: </strong>Una propiedad abreviada para establecer varias propiedades del borde superior a la vez.</li>
+<li class="property-item searchable"><strong>border-top-color: </strong>Establece el color del borde superior de un elemento.</li>
+<li class="property-item searchable"><strong>border-top-style: </strong>Establece el estilo del borde superior de un elemento.</li>
+<li class="property-item searchable"><strong>border-top-width: </strong>Establece el ancho del borde superior de un elemento.</li>
+<li class="property-item searchable"><strong>border-width: </strong>Establece el ancho de los cuatro bordes de un elemento.</li>
+<li class="property-item searchable"><strong>bottom: </strong>Establece la posición del borde inferior de un elemento en relación con su contenedor.</li>
+<li class="property-item searchable"><strong>box-shadow: </strong>Establece una sombra alrededor de un elemento.</li>
+<li class="property-item searchable"><strong>box-sizing: </strong>Especifica cómo se deben calcular las dimensiones de un elemento.</li>
+<li class="property-item searchable"><strong>caption-side: </strong>Establece la posición de la leyenda de una tabla.</li>
+<li class="property-item searchable"><strong>clear: </strong>Establece cómo un elemento debe comportarse en relación con los elementos flotantes de la página.</li>
+<li class="property-item searchable"><strong>clip: </strong>Establece un área recortada para un elemento.</li>
+<li class="property-item searchable"><strong>color: </strong>Establece el color del texto de un elemento.</li>
+<li class="property-item searchable"><strong>column-count: </strong>Establece el número de columnas en un diseño de varias columnas.</li>
+<li class="property-item searchable"><strong>column-fill: </strong>Especifica cómo se deben distribuir los contenidos en varias columnas.</li>
+<li class="property-item searchable"><strong>column-gap: </strong>Establece el espacio entre las columnas de un diseño de varias columnas.</li>
+<li class="property-item searchable"><strong>column-rule: </strong>Una propiedad abreviada para establecer varias propiedades de la regla de columna a la vez.</li>
+<li class="property-item searchable"><strong>column-rule-color: </strong>Establece el color de la regla de columna en</li>
+<li class="property-item searchable"><strong>column-rule-style: </strong>Establece el estilo de la regla de columna en un diseño de varias columnas.</li>
+<li class="property-item searchable"><strong>column-rule-width: </strong>Establece el ancho de la regla de columna en un diseño de varias columnas.</li>
+<li class="property-item searchable"><strong>column-span: </strong>Establece si un elemento debe extenderse a través de todas las columnas de un diseño de varias columnas.</li>
+<li class="property-item searchable"><strong>column-width: </strong>Establece el ancho de las columnas en un diseño de varias columnas.</li>
+<li class="property-item searchable"><strong>columns: </strong>Una propiedad abreviada para establecer varias propiedades de diseño de varias columnas a la vez.</li>
+<li class="property-item searchable"><strong>content: </strong>Inserta contenido generado por CSS, como texto o imágenes, antes o después del contenido de un elemento.</li>
+<li class="property-item searchable"><strong>counter-increment: </strong>Incrementa el valor de un contador definido por el usuario.</li>
+<li class="property-item searchable"><strong>counter-reset: </strong>Establece el valor inicial de un contador definido por el usuario.</li>
+<li class="property-item searchable"><strong>cursor: </strong>Establece el cursor del ratón para un elemento.</li>
+<li class="property-item searchable"><strong>direction: </strong>Establece la dirección del texto de un elemento.</li>
+<li class="property-item searchable"><strong>display: </strong>Establece el tipo de visualización de un elemento.</li>
+<li class="property-item searchable"><strong>empty-cells: </strong>Especifica si se deben mostrar o no los bordes de las celdas vacías en una tabla.</li>
+<li class="property-item searchable"><strong>filter: </strong>Establece un efecto visual en un elemento.</li>
+<li class="property-item searchable"><strong>flex: </strong>Una propiedad abreviada para establecer varias propiedades de diseño flexible a la vez.</li><li class="property-item searchable"><strong>flex-basis: </strong>Establece el tamaño inicial de un elemento flexible.</li><li class="property-item searchable"><strong>flex-direction: </strong>Establece la dirección de los elementos dentro de un contenedor flexible.</li><li class="property-item searchable"><strong>flex-flow: </strong>Una propiedad abreviada para establecer las propiedades de dirección y envoltura flexible a la vez.</li><li class="property-item searchable"><strong>flex-grow: </strong>Establece la cantidad de espacio adicional que un elemento flexible debe ocupar en un contenedor flexible.</li><li class="property-item searchable"><strong>flex-shrink: </strong>Establece la cantidad de espacio adicional que un elemento flexible debe reducirse en un contenedor flexible.</li><li class="property-item searchable"><strong>flex-wrap: </strong>Establece si los elementos flexibles deben ajustarse o no a una sola línea.</li><li class="property-item searchable"><strong>float: </strong>Establece si un elemento debe flotar a la izquierda o a la derecha de su contenedor.</li><li class="property-item searchable"><strong>font: </strong>Una propiedad abreviada para establecer varias propiedades de fuente a la vez.</li><li class="property-item searchable"><strong>font-family: </strong>Establece la familia de fuentes para el texto de un elemento.</li><li class="property-item searchable"><strong>font-size: </strong>Establece el tamaño de la fuente para el texto de un elemento.</li><li class="property-item searchable"><strong>font-style: </strong>Establece el estilo de la fuente para el texto de un elemento.</li><li class="property-item searchable"><strong>font-variant: </strong>Establece la variante de fuente para el texto de un elemento.</li><li class="property-item searchable"><strong>font-weight: </strong>Establece el peso de la fuente para el texto de un elemento.</li><li class="property-item searchable"><strong>gap: </strong>Establece el espacio entre las filas y columnas de un diseño de cuadrícula.</li><li class="property-item searchable"><strong>grid: </strong>Una propiedad abreviada para establecer varias propiedades de diseño de cuadrícula a la vez.</li><li class="property-item searchable"><strong>grid-area: </strong>Establece una región nombrada en un diseño de cuadrícula.</li><li class="property-item searchable"><strong>grid-auto-columns: </strong>Establece el ancho predeterminado de las columnas sin nombre en un diseño de cuadrícula.</li><li class="property-item searchable"><strong>grid-auto-rows: </strong>Establece la altura predeterminada de las filas sin nombre en un diseño de cuadrícula.</li><li class="property-item searchable"><strong>grid-column: </strong>Una propiedad abreviada para establecer la ubicación de una columna en un diseño de cuadrícula.</li><li class="property-item searchable"><strong>grid-column-end: </strong>Establece el final de una columna en un diseño de cuadrícula</li>
+<li class="property-item searchable"><strong>grid-column-gap: </strong>Establece el espacio entre las columnas en un diseño de cuadrícula.</li><li class="property-item searchable"><strong>grid-column-start: </strong>Establece el inicio de una columna en un diseño de cuadrícula.</li><li class="property-item searchable"><strong>grid-gap: </strong>Una propiedad abreviada para establecer el espacio entre filas y columnas en un diseño de cuadrícula.</li><li class="property-item searchable"><strong>grid-row: </strong>Una propiedad abreviada para establecer la ubicación de una fila en un diseño de cuadrícula.</li><li class="property-item searchable"><strong>grid-row-end: </strong>Establece el final de una fila en un diseño de cuadrícula.</li><li class="property-item searchable"><strong>grid-row-gap: </strong>Establece el espacio entre las filas en un diseño de cuadrícula.</li><li class="property-item searchable"><strong>grid-row-start: </strong>Establece el inicio de una fila en un diseño de cuadrícula.</li><li class="property-item searchable"><strong>grid-template: </strong>Una propiedad abreviada para establecer las plantillas de filas y columnas en un diseño de cuadrícula.</li><li class="property-item searchable"><strong>grid-template-areas: </strong>Establece las áreas nombradas en un diseño de cuadrícula.</li><li class="property-item searchable"><strong>grid-template-columns: </strong>Establece las columnas en un diseño de cuadrícula.</li><li class="property-item searchable"><strong>grid-template-rows: </strong>Establece las filas en un diseño de cuadrícula.</li><li class="property-item searchable"><strong>height: </strong>Establece la altura de un elemento.</li><li class="property-item searchable"><strong>hyphens: </strong>Controla cómo se dividen las palabras largas en varias líneas.</li><li class="property-item searchable"><strong>justify-content: </strong>Establece la alineación horizontal de los elementos dentro de un contenedor flexible.</li><li class="property-item searchable"><strong>left: </strong>Establece la posición del borde izquierdo de un elemento en relación con su contenedor.</li><li class="property-item searchable"><strong>letter-spacing: </strong>Establece la separación entre caracteres en un elemento de texto.</li><li class="property-item searchable"><strong>line-height: </strong>Establece la altura de línea para el texto de un elemento.</li><li class="property-item searchable"><strong>list-style: </strong>Una propiedad abreviada para establecer varias propiedades de estilo de lista a la vez.</li><li class="property-item searchable"><strong>list-style-image: </strong>Establece una imagen como viñeta de una lista.</li><li class="property-item searchable"><strong>list-style-position: </strong>Establece la posición de las viñetas en una lista.</li><li class="property-item searchable"><strong>list-style-type: </strong>Establece el tipo de viñeta para una lista.</li><li class="property-item searchable"><strong>margin: </strong>Una propiedad abreviada para establecer los márgenes de un elemento a la vez.</li><li class="property-item searchable"><strong>margin-bottom: </strong>Establece el margen inferior de un elemento.</li><li class="property-item searchable"><strong>margin-left: </strong>Establece el margen izquierdo de un elemento.</li><li class="property-item searchable"><strong>margin-right: </strong>Establece el margen derecho de un elemento.</li><li class="property-item searchable"><strong>margin-top: </strong>Establece el margen superior de un elemento.</li><li class="property-item searchable"><strong>max-height: </strong>Establece la altura máxima de un elemento.</li><li class="property-item searchable"><strong>max-width: </strong>Establece el ancho máximo de un elemento.</li><li class="property-item searchable"><strong>min-height: </strong>Establece la altura mínima de un elemento.</li><li class="property-item searchable"><strong>min-width: </strong>Establece el ancho mínimo de un elemento.</li><li class="property-item searchable"><strong>object-fit: </strong>Establece cómo se debe ajustar una imagen o un video dentro de su contenedor.</li><li class="property-item searchable"><strong>object-position: </strong>Establece la posición de una imagen o un video dentro de su contenedor.</li><li class="property-item searchable"><strong>opacity: </strong>Establece la opacidad de un elemento.</li><li class="property-item searchable"><strong>order: </strong>Establece el orden de un elemento flexible dentro de un contenedor flexible.</li><li class="property-item searchable"><strong>outline: </strong>Una propiedad abreviada para establecer varias propiedades del contorno a la vez.</li><li class="property-item searchable"><strong>outline-color: </strong>Establece el color del contorno de un elemento.</li><li class="property-item searchable"><strong>outline-offset: </strong>Establece la distancia entre el contorno y el borde de un elemento.</li><li class="property-item searchable"><strong>outline-style: </strong>Establece el estilo del contorno de un elemento.</li><li class="property-item searchable"><strong>outline-width: </strong>Establece el ancho del cont</li>
+<li class="property-item searchable"><strong>overflow: </strong>Establece cómo se debe comportar un elemento cuando su contenido se desborda de su área.</li><li class="property-item searchable"><strong>overflow-x: </strong>Establece cómo se debe comportar un elemento cuando su contenido se desborda horizontalmente.</li><li class="property-item searchable"><strong>overflow-y: </strong>Establece cómo se debe comportar un elemento cuando su contenido se desborda verticalmente.</li><li class="property-item searchable"><strong>padding: </strong>Una propiedad abreviada para establecer los rellenos de un elemento a la vez.</li><li class="property-item searchable"><strong>padding-bottom: </strong>Establece el relleno inferior de un elemento.</li><li class="property-item searchable"><strong>padding-left: </strong>Establece el relleno izquierdo de un elemento.</li><li class="property-item searchable"><strong>padding-right: </strong>Establece el relleno derecho de un elemento.</li><li class="property-item searchable"><strong>padding-top: </strong>Establece el relleno superior de un elemento.</li><li class="property-item searchable"><strong>page-break-after: </strong>Establece si se debe insertar un salto de página después de un elemento.</li><li class="property-item searchable"><strong>page-break-before: </strong>Establece si se debe insertar un salto de página antes de un elemento.</li><li class="property-item searchable"><strong>page-break-inside: </strong>Establece si se debe permitir o evitar los saltos de página dentro de un elemento.</li><li class="property-item searchable"><strong>perspective: </strong>Establece la perspectiva para un elemento 3D.</li><li class="property-item searchable"><strong>perspective-origin: </strong>Establece la posición en la que el espectador ve un elemento 3D.</li><li class="property-item searchable"><strong>position: </strong>Establece el tipo de posición para un elemento.</li><li class="property-item searchable"><strong>quotes: </strong>Establece las comillas que se deben utilizar para citas en un elemento.</li><li class="property-item searchable"><strong>resize: </strong>Establece si un elemento se puede redimensionar y cómo se deben mostrar las áreas de redimensionamiento.</li><li class="property-item searchable"><strong>right: </strong>Establece la posición del borde derecho de un elemento en relación con su contenedor.</li><li class="property-item searchable"><strong>tab-size: </strong>Establece el ancho de una tabulación.</li><li class="property-item searchable"><strong>table-layout: </strong>Establece cómo se deben distribuir las celdas en una tabla.</li><li class="property-item searchable"><strong>text-align: </strong>Establece la alineación horizontal del texto de un elemento.</li><li class="property-item searchable"><strong>text-decoration: </strong>Establece la decoración del texto de un elemento, como subrayado o tachado.</li><li class="property-item searchable"><strong>text-indent: </strong>Establece la sangría de la primera línea de un elemento de texto.</li><li class="property-item searchable"><strong>text-justify: </strong>Controla cómo se justifica el texto de un elemento.</li><li class="property-item searchable"><strong>text-overflow: </strong>Especifica cómo se debe mostrar el texto que se desborda de un elemento.</li><li class="property-item searchable"><strong>text-shadow: </strong>Establece una sombra alrededor del texto de un elemento.</li><li class="property-item searchable"><strong>text-transform: </strong>Establece la transformación de texto para el texto de un elemento, como mayúsculas o minúsculas.</li><li class="property-item searchable"><strong>top: </strong>Establece la posición del borde superior de un elemento en relación con su contenedor.</li><li class="property-item searchable"><strong>transform: </strong>Establece una transformación para un elemento, como rotación, escala o sesgo.</li><li class="property-item searchable"><strong>transform-origin: </strong>Establece el punto de origen de una transformación.</li><li class="property-item searchable"><strong>transform-style: </strong>Establece si las transformaciones se aplican en 2D o 3D.</li><li class="property-item searchable"><strong>transition: </strong>Una propiedad abreviada para establecer varias propiedades de transición a la vez.</li><li class="property-item searchable"><strong>transition-delay: </strong>Establece un retraso antes de que comience una transición.</li><li class="property-item searchable"><strong>transition-duration: </strong>Establece la duración de una transición.</li><li class="property-item searchable"><strong>transition-property: </strong>Establece las propiedades que deben ser afectadas por una transición.</li><li class="property-item searchable"><strong>transition-timing-function: </strong>Establece la curva de tiempo para una transición.</li><li class="property-item searchable"><strong>unicode-bidi: </strong>Establece la dirección de la escritura para el contenido de un elemento.</li><li class="property-item searchable"><strong>user-select: </strong>Establece si el usuario puede seleccionar el contenido de un elemento.</li>
+<li class="property-item searchable"><strong>vertical-align: </strong>Establece la alineación vertical de un elemento en relación con su contenedor o con otro elemento.</li><li class="property-item searchable"><strong>visibility: </strong>Establece si un elemento es visible o no.</li><li class="property-item searchable"><strong>white-space: </strong>Controla cómo se manejan los espacios en blanco en el texto de un elemento.</li><li class="property-item searchable"><strong>width: </strong>Establece el ancho de un elemento.</li><li class="property-item searchable"><strong>word-break: </strong>Controla cómo se rompen las palabras largas en el texto de un elemento.</li><li class="property-item searchable"><strong>word-spacing: </strong>Establece la separación entre palabras en el texto de un elemento.</li><li class="property-item searchable"><strong>word-wrap: </strong>Establece si se deben permitir o evitar las rupturas de línea dentro de palabras largas en el texto de un elemento.</li><li class="property-item searchable"><strong>writing-mode: </strong>Establece la dirección de escritura del texto de un elemento.</li><li class="property-item searchable"><strong>z-index: </strong>Establece la profundidad de apilamiento de un elemento en relación con otros elementos.</li>
+</ul>
+</body>
+</html>
