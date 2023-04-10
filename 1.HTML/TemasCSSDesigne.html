@@ -8,6 +8,7 @@
     <!--Librerías Prism:-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 <style>
     .marquee {
         width: 100%;
@@ -31,10 +32,30 @@
           left: -100%;
         }
       }
+
+      /* Estilos botón arriba */
+      
+        #btn-volver-arriba {
+          display: none;
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          z-index: 99;
+          background-color: #333;
+          color: #fff;
+          border: none;
+          outline: none;
+          cursor: pointer;
+          padding: 10px;
+          border-radius: 50%;
+          font-size: 24px;
+      }
+      
 </style>
 </head>
 <body>
-    <ul>
+  <button id="btn-volver-arriba" onclick="volverArriba()"><i class="fas fa-arrow-up"></i></button>
+   <ul>
         <li>Diseño de página web:</li>
         <ol>
             <li>Diseño de encabezado y pie de página</li>
@@ -144,9 +165,24 @@
           </textarea>
         </code></pre>
   </div>
-  <!--FIN Código para ventana fragmento con copy-->
+  <!--FIN Código para ventana fragmento con copy-->   
+  <script>
+    window.onscroll = function() {mostrarBoton()};
 
+    function mostrarBoton() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("btn-volver-arriba").style.display = "block";
+      } else {
+        document.getElementById("btn-volver-arriba").style.display = "none";
+      }
+    }
 
- 
+    function volverArriba() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+      document.getElementById("btn-volver-arriba").style.display = "none";
+    }
+</script>
+
 </body>
 </html>

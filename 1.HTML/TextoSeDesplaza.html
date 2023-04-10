@@ -8,8 +8,27 @@
   <!--Librerías Prism:-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism.min.css" rel="stylesheet" />
+<!-- Link y Fragmento estilos botón Volver Arriba -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<style>
+    #btn-volver-arriba {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 99;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 10px;
+        border-radius: 50%;
+        font-size: 24px;
+    }
 
-  <style>
+/* Fin estilos Volver Arriba */
+
     .marquee {
         width: 100%;
         overflow: hidden;
@@ -56,6 +75,9 @@
   </style>
 </head>
 <body>
+  <!-- Botón Volver Arriba -->
+  <button id="btn-volver-arriba" onclick="volverArriba()"><i class="fas fa-arrow-up"></i></button>
+  <!---->
   <div class="marquee">
     <div class="marquee__inner">
       <span class="text-uno">Este texto se desplaza</span>
@@ -158,5 +180,23 @@ La propiedad "white-space: nowrap" evita que el texto se envuelva al siguiente r
         </code></pre>
   </div>
   <!--FIN Código para ventana fragmento con copy-->
+  <!-- Funcionalidad Botón icono Volver Arriba --->
+  <script>
+    window.onscroll = function() {mostrarBoton()};
+
+    function mostrarBoton() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("btn-volver-arriba").style.display = "block";
+      } else {
+        document.getElementById("btn-volver-arriba").style.display = "none";
+      }
+    }
+
+    function volverArriba() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+      document.getElementById("btn-volver-arriba").style.display = "none";
+    }
+</script>
 </body>
 </html>

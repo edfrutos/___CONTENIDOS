@@ -1,14 +1,11 @@
-<!--Crear en html, css y javascript un menu hamburguesa desplegable que se muestre a menos de 767px-->
-
-<!--Aquí está un ejemplo de código HTML, CSS y JavaScript para crear un menú hamburguesa desplegable que se muestre a menos de 767 píxeles:
-HTML:-->
-
-
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
     @media screen and (max-width: 767px) {
       .topnav.responsive {position: relative;}
@@ -51,33 +48,39 @@ HTML:-->
     
     .topnav .icon {
       display: none;
+      cursor: pointer;
+      font-size: 20px;
+      margin-top: 12px;
+      margin-right: 16px;
     }
     </style>
-    <script>
-        function myFunction() {
-          var x = document.getElementById("myTopnav");
-          if (x.className === "topnav") {
-            x.className += " responsive";
-          } else {
-            x.className = "topnav";
-          }
-        }
-        </script>
 </head>
 <body>
-
-<div class="topnav" id="myTopnav">
-  <a href="#home">Home</a>
-  <a href="#news">News</a>
-  <a href="#contact">Contact</a>
-  <a href="#about">About</a>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
-</div>
-
+  <div class="topnav" id="myTopnav">
+    <a href="#home">Home</a>
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <span class="icon">&#9776;</span>
+  
+    </a>
+  </div>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
 </body>
 </html>
 
+<!--Crear en html, css y javascript un menu hamburguesa desplegable que se muestre a menos de 767px-->
 
+<!--Aquí está un ejemplo de código HTML, CSS y JavaScript para crear un menú hamburguesa desplegable que se muestre a menos de 767 píxeles:
+HTML:-->
 <!--Este código crea un menú con diferentes enlaces de navegación que se despliegan al hacer clic en el icono hamburguesa (representado por una "i" en un círculo) cuando el tamaño de la pantalla es menor a 767 píxeles.-->

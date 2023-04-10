@@ -1,7 +1,47 @@
 <!--INICIO Código para ventana fragmento con copy-->
+<style>
+    #code-window {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 20px;
+        margin-top: 20px;
+        }
+        
+        #code-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+        }
+        
+        #code-header span {
+        font-size: 20px;
+        font-weight: bold;
+        }
+        
+        #copy-btn {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 5px 10px;
+        cursor: pointer;
+        }
+        
+        #copy-btn svg {
+        width: 16px;
+        height: 16px;
+        margin-right: 5px;
+        }
+        
+        #copy-btn span {
+        font-size: 14px;
+        font-weight: bold;
+        }
+</style>
 <div id="code-window">
     <div id="code-header">
-        <span>Code CSS</span>
+        <span>Code JacaScript</span>
         <button id="copy-btn">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                 <path fill="none" d="M0 0h24v24H0z" />
@@ -11,11 +51,22 @@
             <span>Copy Code</span>
         </button>
     </div>
-    <pre><code id="code-input" class="language-css">
+    <pre><code id="code-input" class="language-javascript">
+        const copyBtn = document.querySelector("#copy-btn");
+const codeInput = document.querySelector("#code-input");
 
-  <textarea>
-   
-  </textarea>
+copyBtn.addEventListener("click", () => {
+codeInput.select();
+document.execCommand("copy");
+});
 </code></pre>
-</div>
+<script>
+    const copyBtn = document.querySelector("#copy-btn");
+const codeInput = document.querySelector("#code-input");
+
+copyBtn.addEventListener("click", () => {
+codeInput.select();
+document.execCommand("copy");
+});
+</script>
 <!--FIN Código para ventana fragmento con copy-->

@@ -5,13 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tipografia y tamaño de imagen</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <style>
+        #btn-volver-arriba {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 999;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #333;
+            color: #fff;
+            font-size: 20px;
+            text-align: center;
+            line-height: 40px;
+            cursor: pointer;
+            transition: opacity 0.3s ease-in-out;
+        }
+
         h1, h2, h3, h4 {
             text-align: center;
         }
     </style>
 </head>
 <body>
+  <button id="btn-volver-arriba"><i class="fas fa-chevron-up"></i></button>
     <header>
         <h1>
             Control de tipografía y tamaño de imágenes en diferentes tamaños de pantalla
@@ -259,5 +279,25 @@ body {
             </ul>
         </div>
     </main>
+    <script>
+      window.onscroll = function() {mostrarBoton()};
+  
+  function mostrarBoton() {
+      var btnVolverArriba = document.getElementById("btn-volver-arriba");
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          btnVolverArriba.style.display = "block";
+      } else {
+          btnVolverArriba.style.display = "none";
+      }
+  }
+  
+  document.getElementById("btn-volver-arriba").addEventListener("click", volverArriba);
+  
+  function volverArriba() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+  }
+  
+  </script>
 </body>
 </html>
